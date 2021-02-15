@@ -41,6 +41,7 @@ export default (() => {
 					<Box display="flex" align-items="center">
 						<Link href="/">
 							<Image
+								loading="lazy"
 								src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/logowhite.svg?v=2021-01-26T19:12:20.383Z"
 								color="#ffffff"
 								width="50px"
@@ -167,6 +168,7 @@ export default (() => {
 							nout-margin="0px 0px 0px 33px"
 						>
 							<Image
+								loading="lazy"
 								width="64px"
 								height="64px"
 								nout-width="50px"
@@ -427,6 +429,7 @@ export default (() => {
 					<Override slot="StackItemContent" flex-direction="column" nout-align-items="flex-end" />
 					{"        "}
 					<Image
+						loading="lazy"
 						width="100%"
 						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/vectorpaint%20(1).svg?v=2021-01-25T11:01:19.138Z"
 						margin="-28px -2px 0px 0px"
@@ -502,7 +505,7 @@ export default (() => {
 							<Text margin="0px 8px 0px 0px" font="500 16px/30px 'AvenirNextCyrMedium', sans-serif" letter-spacing=".5px">
 								Отправить резюме
 							</Text>
-							<Image width="31px" height="12px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/arrowpop.svg?v=2021-01-26T22:37:32.256Z" />
+							<Image loading="lazy" width="31px" height="12px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/arrowpop.svg?v=2021-01-26T22:37:32.256Z" />
 						</Box>
 					</Box>
 				</Override>
@@ -657,7 +660,7 @@ export default (() => {
 				<StackItem width="100%" display="flex">
 					{"        "}
 					<Link href="#header">
-						<Image width="32px" height="53px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/vectorpaint%20(2).svg?v=2021-01-25T11:04:32.639Z" />
+						<Image loading="lazy" width="32px" height="53px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/vectorpaint%20(2).svg?v=2021-01-25T11:04:32.639Z" />
 					</Link>
 					{"    "}
 				</StackItem>
@@ -690,6 +693,7 @@ export default (() => {
 					<Box display="flex" align-items="center">
 						<Link href="/">
 							<Image
+								loading="lazy"
 								src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/logoblue.svg?v=2021-01-25T20:59:50.954Z"
 								color="#ffffff"
 								width="50px"
@@ -813,6 +817,7 @@ export default (() => {
 							nout-margin="0px 0px 0px 33px"
 						>
 							<Image
+								loading="lazy"
 								width="64px"
 								height="64px"
 								nout-width="50px"
@@ -1097,7 +1102,7 @@ export default (() => {
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-27T14:59:58.221Z" />
+					<Image loading="lazy" width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-27T14:59:58.221Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 70px 0px"
@@ -1137,7 +1142,7 @@ export default (() => {
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon3.svg?v=2021-01-27T14:59:58.223Z" />
+					<Image loading="lazy" width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon3.svg?v=2021-01-27T14:59:58.223Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 70px 0px"
@@ -1157,7 +1162,7 @@ export default (() => {
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon4.svg?v=2021-01-27T14:59:58.223Z" />
+					<Image loading="lazy" width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon4.svg?v=2021-01-27T14:59:58.223Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 0px 0px"
@@ -1178,7 +1183,7 @@ export default (() => {
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/work.svg?v=2021-02-08T10:30:40.438Z" />
+					<Image loading="lazy" width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/work.svg?v=2021-02-08T10:30:40.438Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 0px 0px"
@@ -1366,7 +1371,7 @@ export default (() => {
 				<StackItem width="25%" display="flex" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/laurel.svg?v=2021-01-26T17:35:48.102Z" />
+					<Image loading="lazy" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/laurel.svg?v=2021-01-26T17:35:48.102Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 0px 0px"
@@ -1404,7 +1409,7 @@ export default (() => {
 				<StackItem width="25%" display="flex" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/laurel.svg?v=2021-01-26T17:35:48.102Z" />
+					<Image loading="lazy" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/laurel.svg?v=2021-01-26T17:35:48.102Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 0px 0px"
