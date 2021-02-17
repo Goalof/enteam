@@ -53,7 +53,7 @@ export default (() => {
 				{"    "}
 			</Stack>
 		</Section>
-		<Section padding="0px 0 40px 0" min-width="100vh">
+		<Section padding="0px 0 40px 0" min-height="80vh">
 			<Override slot="SectionContent" align-items="center" md-margin="0px 0px 0px 0px" md-width="100%" />
 			<Stack margin="0px 0px 0px 0px" max-width="1170px" width="100%">
 				<StackItem width="100%">

@@ -139,7 +139,7 @@ export default (() => {
 						</Box>
 					</Box>
 					<Link
-						href="/vakansii"
+						href="/vacancies"
 						background="#ffd83a"
 						text-decoration-line="initial"
 						color="#263238"
