@@ -74,12 +74,31 @@ const overrides = {
 			"margin": "0px 0px 0px 0px",
 			"display": "inline-block",
 			"color": "#ffffff",
-			"children": <Link href="https://ru.uteam.pro/" color="#000000" text-decoration-line="initial" font="500 18px/50px 'AvenirNextCyrMedium', sans-serif">
-				Вакансии в России
+			"children": <Link href="/" color="#000000" text-decoration-line="initial" font="500 18px/50px 'AvenirNextCyrMedium', sans-serif">
+				Careers for Foreigners{"\n\n"}
 			</Link>
 		}
 	},
 	"text1": {
+		"kind": "Text",
+		"props": {
+			"font": "normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif",
+			"margin": "3px 0px 0px 12px",
+			"display": "inline-block",
+			"color": "#9BABBF",
+			"nout-display": "none",
+			"children": <Link
+				href="https://ru.uteam.pro/"
+				color="#9BABBF"
+				text-decoration-line="initial"
+				hover-color="#ffe02d"
+				transition="color 0.2s ease 0s"
+			>
+				Вакансии в России
+			</Link>
+		}
+	},
+	"text2": {
 		"kind": "Text",
 		"props": {
 			"font": "normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif",
@@ -95,25 +114,6 @@ const overrides = {
 				transition="color 0.2s ease 0s"
 			>
 				Вакансії в Україні{" "}
-			</Link>
-		}
-	},
-	"text2": {
-		"kind": "Text",
-		"props": {
-			"font": "normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif",
-			"margin": "3px 0px 0px 12px",
-			"display": "inline-block",
-			"color": "#9BABBF",
-			"nout-display": "none",
-			"children": <Link
-				href="http://en.uteam.pro/"
-				color="#9BABBF"
-				text-decoration-line="initial"
-				hover-color="#ffe02d"
-				transition="color 0.2s ease 0s"
-			>
-				Applying from overseas
 			</Link>
 		}
 	},
@@ -371,7 +371,35 @@ const overrides = {
 		"kind": "Override",
 		"props": {
 			"slot": "link-index",
-			"children": "Главная"
+			"children": "Home"
+		}
+	},
+	"menuOverride5": {
+		"kind": "Override",
+		"props": {
+			"slot": "link-vacancies",
+			"children": "Jobs"
+		}
+	},
+	"menuOverride6": {
+		"kind": "Override",
+		"props": {
+			"slot": "link-uteam",
+			"children": "uTeam"
+		}
+	},
+	"menuOverride7": {
+		"kind": "Override",
+		"props": {
+			"slot": "link-resume",
+			"children": "Join Us"
+		}
+	},
+	"menuOverride8": {
+		"kind": "Override",
+		"props": {
+			"slot": "link-contacts",
+			"children": "Contact"
 		}
 	},
 	"stackItem2": {
@@ -406,7 +434,7 @@ const overrides = {
 			"nout-padding": "15px 25px 15px 25px",
 			"nout-margin": "0px 0px 0px 0px",
 			"children": <Link
-				href="http://en.uteam.pro/"
+				href="http://ru.uteam.pro/"
 				color="#4a8cfa"
 				text-decoration-line="initial"
 				hover-color="#3d72cc"
@@ -417,7 +445,7 @@ const overrides = {
 				nout-font="18px AvenirNextCyrRegular, sans-serif"
 				nout-padding="0px 0px 0px 0px"
 			>
-				Careers for Foreigners
+				Вакансии в России
 			</Link>
 		}
 	},
@@ -620,36 +648,36 @@ const overrides = {
 			"nout-display": "none"
 		}
 	},
-	"menuOverride5": {
+	"menuOverride9": {
 		"kind": "Override",
 		"props": {
 			"slot": "item-404",
 			"display": "none"
 		}
 	},
-	"menuOverride6": {
+	"menuOverride10": {
 		"kind": "Override",
 		"props": {
 			"slot": "link-index",
 			"text-decoration-line": "initial",
-			"children": "Главная"
+			"children": "Home"
 		}
 	},
-	"menuOverride7": {
+	"menuOverride11": {
 		"kind": "Override",
 		"props": {
 			"slot": "item-active",
 			"color": "#4a8cfa"
 		}
 	},
-	"menuOverride8": {
+	"menuOverride12": {
 		"kind": "Override",
 		"props": {
 			"slot": "link-active",
 			"color": "#4a8cfa"
 		}
 	},
-	"menuOverride9": {
+	"menuOverride13": {
 		"kind": "Override",
 		"props": {
 			"slot": "link",
@@ -660,30 +688,53 @@ const overrides = {
 			"hover-color": "#4a8cfa"
 		}
 	},
-	"menuOverride10": {
+	"menuOverride14": {
 		"kind": "Override",
 		"props": {
 			"slot": "link-uteam",
 			"children": "uTeam"
 		}
 	},
-	"menuOverride11": {
+	"menuOverride15": {
 		"kind": "Override",
 		"props": {
 			"slot": "item-pr-menedzher",
 			"display": "none"
 		}
 	},
-	"menuOverride12": {
+	"menuOverride16": {
 		"kind": "Override",
 		"props": {
 			"slot": "item-back-end-razrabotchik-php",
 			"display": "none"
 		}
+	},
+	"menuOverride17": {
+		"kind": "Override",
+		"props": {
+			"slot": "link-vacancies",
+			"children": "Jobs"
+		}
+	},
+	"menuOverride18": {
+		"kind": "Override",
+		"props": {
+			"slot": "link-resume",
+			"children": "Joun Us"
+		}
+	},
+	"menuOverride19": {
+		"kind": "Override",
+		"props": {
+			"slot": "link-contacts",
+			"children": <>
+				Contact{"\n\n"}
+			</>
+		}
 	}
 };
 
-const Header = props => {
+const HeaderNew1 = props => {
 	const {
 		override,
 		children,
@@ -732,6 +783,10 @@ const Header = props => {
 						<Override {...override("menuOverride2")} />
 						<Override {...override("menuOverride3")} />
 						<Override {...override("menuOverride4")} />
+						<Override {...override("menuOverride5")} />
+						<Override {...override("menuOverride6")} />
+						<Override {...override("menuOverride7")} />
+						<Override {...override("menuOverride8")} />
 					</Menu>
 					<StackItem {...override("stackItem2")}>
 						<Override {...override("stackItemOverride2")} />
@@ -760,14 +815,17 @@ const Header = props => {
 					</StackItem>
 				</MobileSide>
 				<Menu {...override("menu1")}>
-					<Override {...override("menuOverride5")} />
-					<Override {...override("menuOverride6")} />
-					<Override {...override("menuOverride7")} />
-					<Override {...override("menuOverride8")} />
 					<Override {...override("menuOverride9")} />
 					<Override {...override("menuOverride10")} />
 					<Override {...override("menuOverride11")} />
 					<Override {...override("menuOverride12")} />
+					<Override {...override("menuOverride13")} />
+					<Override {...override("menuOverride14")} />
+					<Override {...override("menuOverride15")} />
+					<Override {...override("menuOverride16")} />
+					<Override {...override("menuOverride17")} />
+					<Override {...override("menuOverride18")} />
+					<Override {...override("menuOverride19")} />
 				</Menu>
 				{"        "}
 			</StackItem>
@@ -777,8 +835,8 @@ const Header = props => {
 	</Section>;
 };
 
-Object.assign(Header, { ...Section,
+Object.assign(HeaderNew1, { ...Section,
 	defaultProps,
 	overrides
 });
-export default Header;
+export default HeaderNew1;

@@ -11,9 +11,11 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"vacancies/technology-evangelistdeveloper-advocate"} />
 		<Helmet>
 			<title>
-				Technology Evangelist/Developer Advocate
+				Technical Support Specialist - Job at uCoz
 			</title>
-			<meta name={"description"} content={"Web site created using quarkly.io"} />
+			<meta name={"description"} content={"Technical Support Specialist"} />
+			<meta property={"og:description"} content={"Job at uCoz. Job opportunities currently available at uCoz. Office and remote work. Learn how to join us and what it's like working in uTeam."} />
+			<meta property={"og:image"} content={"https://images.unsplash.com/photo-1612832021455-245704c6755a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.Header />
@@ -43,7 +45,7 @@ export default (() => {
 							margin="-1px 2px 0px -2px"
 							hover-color="inherit"
 						/>
-						К списку вакансий
+						Back to all jobs
 					</Link>
 					<Text
 						font="normal 500 44px/1.2 'AvenirNextCyrDemi', sans-serif"
@@ -54,7 +56,7 @@ export default (() => {
 						color="#263238"
 						sm-font="normal 500 40px/1.2 'AvenirNextCyrDemi', sans-serif"
 					>
-						Technology Evangelist/Developer Advocate
+						Technical Support Specialist
 					</Text>
 					<Text
 						font="normal 400 18px/1.2 'AvenirNextCyrMedium', sans-serif"
@@ -65,7 +67,7 @@ export default (() => {
 						color="#333"
 						letter-spacing=".2"
 					>
-						Проект Quarkly| Удаленная работа
+						Support Project | Remote work
 					</Text>
 					<Text
 						font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif"
@@ -75,7 +77,9 @@ export default (() => {
 						letter-spacing="0.3px"
 						color="#333"
 					>
-						Мы ищем человека для продвижения на англоязычном рынке проекта Quarkly, ориентированного на профессиональных пользователей (веб-дизайнеров, фронтенд-разработчиков, верстальщиков).
+						We are looking for an energetic, diligent and attentive professional to join our technical support team.
+						<br />
+						{"\n\n"}
 					</Text>
 					<Text
 						font="normal 400 20px/1.2 'AvenirNextCyrMedium', sans-serif"
@@ -86,21 +90,16 @@ export default (() => {
 						color="#333"
 						letter-spacing=".2"
 					>
-						Задачи:
+						Duties:
 					</Text>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							Представлять и продвигать проект Quarkly в профессиональной среде.
+							dealing with technical support tickets submitted by our users;
 						</Text>
 					</List>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							Выстраивать взаимодействие с профессиональными сообществами, лидерами мнений.
-						</Text>
-					</List>
-					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
-						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							Организовывать участие в мероприятиях, выступать на мероприятиях (конференции, митапы и пр.)
+							fixing issues our customers may face when using our web services.
 						</Text>
 					</List>
 					<Text
@@ -112,32 +111,26 @@ export default (() => {
 						color="#333"
 						letter-spacing=".2"
 					>
-						Требования:
-						<br />
+						Requirements:
 					</Text>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							Свободный английский язык.
+							basic knowledge of HTML, CSS;
 						</Text>
 					</List>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							Умение легко завязывать и поддерживать рабочие отношения с журналистами и блогерами.
+							excellent writing skills;
 						</Text>
 					</List>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							Инициативность, трезвость мышления и бизнес-ориентированность.
+							knowledge of uCoz, uKit or uWeb systems will be a great advantage;
 						</Text>
 					</List>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							Знание и понимание веба (нужно говорить на одном языке с аудиторией и разработчиками продуктов).
-						</Text>
-					</List>
-					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
-						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							Наличие деловых контактов на рынке digital/IT будет бесспорным плюсом.
+							activity on the uCoz community forum (+3 to karma).
 						</Text>
 					</List>
 					<Text
@@ -149,8 +142,7 @@ export default (() => {
 						color="#333"
 						letter-spacing=".2"
 					>
-						Условия:
-						<br />
+						We offer:
 					</Text>
 					<Box
 						display="flex"
@@ -168,8 +160,7 @@ export default (() => {
 							lg-margin="12px 10px 0px 0px"
 						/>
 						<Text margin="6px 0px 6px 0px" font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif">
-							Удаленная работа.
-							<br />
+							work on the young and friendly team of professionals;
 						</Text>
 					</Box>
 					<Box
@@ -188,7 +179,26 @@ export default (() => {
 							lg-margin="12px 10px 0px 0px"
 						/>
 						<Text margin="6px 0px 6px 0px" font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif">
-							Частичная занятость
+							officially declared salary, determined by the results of the interview;
+						</Text>
+					</Box>
+					<Box
+						display="flex"
+						align-items="center"
+						margin="0px 0px 6px 0px"
+						lg-align-items="flex-start"
+						lg-padding="0px 0px 0px 0px"
+					>
+						<Image
+							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/tick.svg?v=2021-02-04T00:08:19.533Z"
+							width="15px"
+							height="12px"
+							padding="0px 0px 0px 0px"
+							margin="0px 10px 0px 0px"
+							lg-margin="12px 10px 0px 0px"
+						/>
+						<Text margin="6px 0px 6px 0px" font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif">
+							all opportunities for professional growth and development (conferences, trainings);
 						</Text>
 					</Box>
 					<Components.PopUp
@@ -215,7 +225,7 @@ export default (() => {
 							margin="30px 0px 10px 0px"
 							hover-background="#e6c235"
 						>
-							Откликнуться на вакансию
+							Apply Now
 						</Override>
 						<Override
 							slot="wrapper"

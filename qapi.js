@@ -23,8 +23,8 @@ export default {
 			"name": "index",
 			"pageUrl": "index",
 			"seo": {
-				"title": "Главная - Работа в uTeam",
-				"description": "Работа в uCoz. Актуальные вакансии компании в российских офисах и удаленная работа. Как попасть в команду, и о нашем коллективе — uTeam."
+				"title": "Home - Jobs at uTeam",
+				"description": "Job at uCoz. Job opportunities currently available at uCoz. Office and remote work. Learn how to join us and what it's like working in uTeam."
 			}
 		},
 		"602a760f8db767001e878978": {
@@ -32,10 +32,11 @@ export default {
 			"pageUrl": "vacancies",
 			"name": "Вакансии",
 			"seo": {
-				"description": "Вакансии в uCoz. Все вакансии компании по направлениям и проектам. В офисах в Москве, Санкт-Петербурге, Ростове-на-Дону. Удаленная работа.",
-				"title": "Вакансии - Работа в uTeam"
+				"description": "Jobs at uCoz. All job opportunities at uCoz by roles and projects. Office and remote work.",
+				"title": "Jobs - Jobs at uTeam"
 			},
 			"children": [
+				"602a760f8db767001e878998",
 				"602a760f8db767001e878980",
 				"602a760f8db767001e878982",
 				"602a760f8db767001e878984",
@@ -47,8 +48,7 @@ export default {
 				"602a760f8db767001e878990",
 				"602a760f8db767001e878992",
 				"602a760f8db767001e878994",
-				"602a760f8db767001e878996",
-				"602a760f8db767001e878998"
+				"602a760f8db767001e878996"
 			]
 		},
 		"602a760f8db767001e87897a": {
@@ -56,8 +56,8 @@ export default {
 			"pageUrl": "uteam",
 			"name": "Команда",
 			"seo": {
-				"description": "uTeam – команда, которая создаёт наши сервисы: uKit, uLanding, uCoz, uCalc. Гордимся не только сервисами, которые создаём, но и тем, что умеем превращать команды профессионалов в настоящих друзей.",
-				"title": "Команда - Работа в uTeam"
+				"description": "uTeam are people behind uKit, uLanding, uCoz and uCalc services. We take pride not only in creating these services for you but also in turning the teams of professionals into true friends.",
+				"title": "uTeam - Jobs at uTeam"
 			}
 		},
 		"602a760f8db767001e87897c": {
@@ -65,8 +65,8 @@ export default {
 			"pageUrl": "resume",
 			"name": "Как попасть в команду",
 			"seo": {
-				"description": "Вакансии в uCoz. Все вакансии компании по направлениям и проектам. В офисах в Москве, Санкт-Петербурге, Ростове-на-Дону. Удаленная работа.",
-				"title": "Как попасть в команду - Работа в uTeam"
+				"description": "Jobs at uCoz. All job opportunities at uCoz by roles and projects. Office and remote work.",
+				"title": "Join Us - Jobs at uTeam"
 			}
 		},
 		"602a760f8db767001e87897e": {
@@ -74,8 +74,8 @@ export default {
 			"pageUrl": "contacts",
 			"name": "Контакты",
 			"seo": {
-				"title": "Контакт - Работа в uTeam",
-				"description": "Вакансии в uCoz. Все вакансии компании по направлениям и проектам. В офисах в Москве, Санкт-Петербурге, Ростове-на-Дону. Удаленная работа."
+				"title": "Contact - Jobs at uTeam",
+				"description": "Jobs at uCoz. All job opportunities at uCoz by roles and projects. Office and remote work."
 			}
 		},
 		"602a760f8db767001e878980": {
@@ -179,7 +179,8 @@ export default {
 			"pageUrl": "technology-evangelistdeveloper-advocate",
 			"name": "Technology Evangelist/Developer Advocate",
 			"seo": {
-				"title": "Technology Evangelist/Developer Advocate"
+				"title": "Technical Support Specialist - Job at uCoz",
+				"description": "Technical Support Specialist"
 			}
 		}
 	},
@@ -187,6 +188,9 @@ export default {
 	"projectType": "gatsby",
 	"site": {
 		"styles": {},
-		"seo": {}
+		"seo": {
+			"og:description": "Job at uCoz. Job opportunities currently available at uCoz. Office and remote work. Learn how to join us and what it's like working in uTeam.",
+			"og:image": "https://images.unsplash.com/photo-1612832021455-245704c6755a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000"
+		}
 	}
 }

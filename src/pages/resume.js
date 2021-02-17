@@ -10,9 +10,11 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"resume"} />
 		<Helmet>
 			<title>
-				Как попасть в команду - Работа в uTeam
+				Join Us - Jobs at uTeam
 			</title>
-			<meta name={"description"} content={"Вакансии в uCoz. Все вакансии компании по направлениям и проектам. В офисах в Москве, Санкт-Петербурге, Ростове-на-Дону. Удаленная работа."} />
+			<meta name={"description"} content={"Jobs at uCoz. All job opportunities at uCoz by roles and projects. Office and remote work."} />
+			<meta property={"og:description"} content={"Job at uCoz. Job opportunities currently available at uCoz. Office and remote work. Learn how to join us and what it's like working in uTeam."} />
+			<meta property={"og:image"} content={"https://images.unsplash.com/photo-1612832021455-245704c6755a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.Header />
@@ -33,7 +35,7 @@ export default (() => {
 						color="#ffffff"
 						sm-font="normal 500 34px/1.2 'AvenirNextCyrDemi', sans-serif"
 					>
-						Как попасть в команду?
+						How to Join Our Team
 					</Text>
 					{"    "}
 				</StackItem>
@@ -62,13 +64,13 @@ export default (() => {
 							md-width="100%"
 						/>
 						<Override slot="Tab one" border-radius="5px 5px 0px 0px" background="#EEF2F3">
-							Резюме
+							Resume
 						</Override>
 						<Override slot="Tab two" background="#EEF2F3" border-radius="0px">
-							Рассмотрение резюме
+							Resume Review
 						</Override>
 						<Override slot="Tab :active" background="#FFD83A">
-							Собеседование
+							Resume
 						</Override>
 						<Override
 							slot="Tab"
@@ -80,63 +82,68 @@ export default (() => {
 							md-width="100%"
 						/>
 						<Override slot="Tab three" border-radius="0px 0px 5px 5px">
-							Cобеседование
+							Interview
 						</Override>
 						<Components.Tab2 tabId="one" width="100%">
 							<Box>
 								<Text color="#263238" font="36px 'AvenirNextCyrRegular'" margin="0px 0px 16px 0px" sm-text-align="center">
-									Написать хорошее резюме
+									Resume
 								</Text>
 								<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" sm-text-align="center">
-									Хорошее резюме поможет вам презентовать себя, показать свою ценность как профессионала, а нам — составить о вас первое впечатление. Позаботьтесь заранее о том, чтобы это впечатление сложилось правильное.
+									A resume is your business card that should be taken seriously.
+									<br />
+								</Text>
+								<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" sm-text-align="center">
+									Resume is a must to be invited to an interview
 									<br />
 								</Text>
 								<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" sm-text-align="center">
-									Даже если вы хотите работать у нас фрилансером или удаленно, вы должны иметь резюме.
-									<br />
+									Each job position has its key qualifications and requirements, starting from the skill set to your time zone. We can invite you to an interview only when we see you are matching them. And this judgement can be made only once we read your resume.
 								</Text>
 								<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" margin="24px 0px 4px 0px">
-									Правила хорошего резюме:
+									Resume requirements
+									<br />
 								</Text>
 								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										Четко сформулируйте вашу профессиию, желаемую должность, укажите уровень зарплаты
-										<br />
+										general information (full name, date of birth, location, contact details);
 									</Text>
 								</List>
 								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										В опыте работы не забудьте указать фриланс-проекты
-										<br />
+										education;
 									</Text>
 								</List>
 								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										Не стесняйтесь указать факты, не относящиеся к работе: увлечения, специфические навыки
+										work experience (including freelance work): companies' names, job titles, and job responsibilities;
 									</Text>
 								</List>
 								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										Пишите честно, без формализма и стандартных фраз про пунктуальность и стрессоустойчивость
-									</Text>
-								</List>
-								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
-									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										Дополните резюме свежей фотографией
-										<br />
-									</Text>
-								</List>
-								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
-									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										Не забудьте про портфолио
-									</Text>
-								</List>
-								<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
-									<Text font="normal 400 18px/30px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 8px 5px" color="#333">
-										Проверьте резюме на орфографические ошибки
+										professional skills.
 									</Text>
 								</List>
 							</Box>
+							<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" sm-text-align="center">
+								Tell us more
+								<br />
+							</Text>
+							<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" sm-text-align="center">
+								We would like to know you better!{" "}
+								<br />
+								Tell us about your personal traits, hobbies, specific skills and abilities — anything that sets you apart from others. Your photo can be also enclosed with the resume.{" "}
+								<br />
+								Plus, we would be delighted to read your thoughts on the topic "Why I would like to work at this company".
+							</Text>
+							<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" sm-text-align="center">
+								Be honest
+							</Text>
+							<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" sm-text-align="center">
+								Be genuine when telling about yourself.{" "}
+								<br />
+								We don't tolerate exaggerations and outright lies.
+							</Text>
 							<Box display="none" justify-content="center" margin="32px 0px 0px 0px" md-display="none">
 								<Link
 									href="/resume/#two"
@@ -161,34 +168,32 @@ export default (() => {
 						<Components.Tab2 tabId="two">
 							<Box>
 								<Text color="#263238" font="36px 'AvenirNextCyrRegular'" margin="0px 0px 16px 0px" sm-text-align="center">
-									Рассмотрение резюме
+									Resume Review
 								</Text>
 								<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" sm-text-align="center">
-									Мы рассматриваем все резюме
-									<br />
+									We review all resumes
 								</Text>
 								<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" sm-text-align="center">
-									Будьте уверены, мы не имеем привычки терять резюме или бросать читать их на самом интересном месте.
-									<br />
+									We don't have a habit of losing resumes or putting them aside without reading.
 								</Text>
 								<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" margin="20px 0px 16px 0px" sm-text-align="center">
-									Срок рассмотрения резюме может доходить до 2 недель
+									The review period may take up to 2 weeks
 								</Text>
 							</Box>
 							<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" margin="0px 0px 16px 0px" sm-text-align="center">
-								Пожалуйста, будьте терпеливы – при большом потоке кандидатов на рассмотрение резюме требуется немалое время. Мы обязательно свяжемся с вами и пригласим на собеседование.
+								Please be patient. Due to the significant amount of candidates, it may take a while to review a resume. We will definitely get in touch with you and invite you to an interview.
 							</Text>
 							<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" margin="20px 0px 16px 0px" sm-text-align="center">
-								Если вам никто не ответил
+								If you still got no response
 							</Text>
 							<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" margin="0px 0px 16px 0px" sm-text-align="center">
-								Мы стараемся давать обратную связь по всем резюме. Если же вам все таки не ответили в течение 2 недель, значит вакансия уже занята, либо ваш текущий набор навыков не полностью соответствует нашим требованиям.
+								We do our best to get back to every applicant. If you haven't been contacted within two weeks, it means that the job opening has already been closed, or your current set of skills doesn't match our requirements.
 							</Text>
 							<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" margin="20px 0px 16px 0px" sm-text-align="center">
-								Всегда можно попробовать ещё раз
+								Give it a second try
 							</Text>
 							<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" margin="0px 0px 16px 0px" sm-text-align="center">
-								В случае отказа вы всегда можете связаться с нами через некоторое время, когда появится новая интересная вам вакансия или вы решите, что набрали больше опыта и навыков.
+								In case your application has been declined, you can contact us in a while to apply for a new, more interesting to you position, or when you see you've gained necessary working experience and qualifications.
 							</Text>
 							<Box display="none" justify-content="center" margin="32px 0px 0px 0px" md-display="none">
 								<Link
@@ -214,36 +219,34 @@ export default (() => {
 						<Components.Tab2 tabId="three">
 							<Box>
 								<Text color="#263238" font="36px 'AvenirNextCyrRegular'" margin="0px 0px 16px 0px" sm-text-align="center">
-									Собеседование
+									Interview
 								</Text>
 								<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" sm-text-align="center">
-									Процесс собеседования может включать в себя несколько встреч, которые могут быть как личными, так и удаленными.
-									<br />
+									Interviewing process may include several meetings, which can be both personal and remote.
 								</Text>
 								<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" margin="20px 0px 16px 0px" sm-text-align="center">
-									Что будет на собеседовании
+									What happens in an interview
 								</Text>
 							</Box>
 							<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" margin="0px 0px 16px 0px" sm-text-align="center">
-								Разговор о вас
+								Personal talk{"\n\n"}
+							</Text>
+							<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" margin="0px 0px 16px 0px" sm-text-align="center">
+								During an interview we would like to get insight into your personal interests: your ambitions, mindset, attitude towards yourself and people around you. We are also keen to learn about your taste in art and what you do in your spare time.{"\n\n"}
+							</Text>
+							<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" margin="0px 0px 16px 0px" sm-text-align="center">
+								Test assignment and professional questions
 								<br />
+								{"\n\n"}
 							</Text>
 							<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" margin="0px 0px 16px 0px" sm-text-align="center">
-								При проведении интервью мы будем интересоваться вашими амбициями, активностью жизненной позиции, отношением к себе и окружающим. И про ваши вкусы в искусстве и хобби тоже обязательно спросим.
-							</Text>
-							<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" margin="0px 0px 16px 0px" sm-text-align="center">
-								Тестовое задание и профессиональные вопросы
-								<br />
-							</Text>
-							<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" margin="0px 0px 16px 0px" sm-text-align="center">
-								Будьте готовы отвечать на конкретные профессиональные вопросы: если вы программист — писать код, если дизайнер — обсуждать интерфейсные решения. Некоторые позиции в компании предполагают небольшие тестовые задания.
+								Be prepared to answer specific professional questions. If you are a developer, you can be asked to write code, if a designer — discuss interface solutions. Some of the company's job roles require a small test assignment.
 							</Text>
 							<Text font="24px/30px 'AvenirNextCyrMedium', sans-serif" color="#333" margin="20px 0px 16px 0px" sm-text-align="center">
-								Собеседование может быть удалённым
+								An interview can be remote
 							</Text>
 							<Text font="18px/26px 'AvenirNextCyrRegular', sans-serif" color="#333" margin="0px 0px 16px 0px" sm-text-align="center">
-								Часто нам приходится проводить собеседования с кандидатами из других городов удаленно — в Skype. Не забывайте, удаленное собеседование не менее серьезно, чем личное: стоит помнить о пунктуальности и правилах этикета. Мы очень советуем заранее позаботиться о хорошем интернет-соединении, наличии веб-камеры и качественном звуке.
-								<br />
+								It often happens that we interview candidates from other cities remotely, over Skype. Please keep in mind that a remote interview is no less important than a personal one: be punctual and polite. We highly recommend that you take care of the Internet connection, webcam, and sound quality in advance.
 							</Text>
 						</Components.Tab2>
 					</Components.Tabs2>
@@ -275,7 +278,7 @@ export default (() => {
 									margin="0px 0px 0px 0px"
 									hover-background="#e6c235"
 								>
-									Откликнуться на вакансию
+									Send a Resume
 								</Override>
 								<Override
 									slot="wrapper"
@@ -323,7 +326,7 @@ export default (() => {
 						lg-padding="0px 0px 0px 0px"
 						sm-font="normal 400 24px/34px 'AvenirNextCyrMedium', sans-serif"
 					>
-						7 советов, как понравиться нашему HR-менеджеру:
+						7 simple tips on how to charm our HR manager
 					</Text>
 				</StackItem>
 				<StackItem width="33.333%" lg-width="50%" sm-width="100%">
@@ -344,7 +347,7 @@ export default (() => {
 						margin="0px 0px 16px 0px"
 						sm-text-align="center"
 					>
-						Не забывайте о правилах этикета. На работу можно опоздать, на собеседование — ни в коем случае
+						Good manners are essential.
 					</Text>
 				</StackItem>
 				<StackItem width="33.333%" lg-width="50%" sm-width="100%">
@@ -365,7 +368,7 @@ export default (() => {
 						margin="0px 0px 16px 0px"
 						sm-text-align="center"
 					>
-						На время собеседования отключите телефон или поставьте его на беззвучный режим
+						While in an interview, shut off your cell phone or set it to silent.
 					</Text>
 				</StackItem>
 				<StackItem width="33.333%" lg-width="50%" sm-width="100%">
@@ -386,7 +389,7 @@ export default (() => {
 						margin="0px 0px 16px 0px"
 						sm-text-align="center"
 					>
-						Если вы волнуетесь, лучше сразу скажите об этом — это снимет напряжение и точно не испортит впечатление о вас
+						If it's going to be your first interview, or you're simply nervous, let us know about it. It won't make a bad impression.
 					</Text>
 				</StackItem>
 				<StackItem width="33.333%" lg-width="50%" sm-width="100%">
@@ -407,7 +410,7 @@ export default (() => {
 						margin="0px 0px 16px 0px"
 						sm-text-align="center"
 					>
-						Говорите правду. Мы обычные люди и искренность нас подкупает всегда и в любых ситуациях
+						Be honest and truthful when answering questions.
 					</Text>
 				</StackItem>
 				<StackItem width="33.333%" lg-width="50%" sm-width="100%">
@@ -428,7 +431,11 @@ export default (() => {
 						margin="0px 0px 16px 0px"
 						sm-text-align="center"
 					>
-						Пожалуйста, узнайте о нашей компании больше — это поможет вам оценить возможности нашего совместного развития
+						Take some time to research information about the company.
+						<br />
+						{" "}Who we are? What do we do?{" "}
+						<br />
+						What makes us different from other IT companies?
 					</Text>
 				</StackItem>
 				<StackItem width="33.333%" lg-width="50%" sm-width="100%">
@@ -449,9 +456,8 @@ export default (() => {
 						margin="0px 0px 16px 0px"
 						sm-text-align="center"
 					>
-						Задавайте нам вопросы.
+						Be sure to ask us questions regarding the job position and company's activity.
 						<br />
-						Любые: о зарплате, отпуске, обеде и том, как быстро влиться в коллектив
 					</Text>
 				</StackItem>
 				<StackItem width="33.333%" lg-display="none">
@@ -475,7 +481,7 @@ export default (() => {
 						margin="0px 0px 16px 0px"
 						sm-text-align="center"
 					>
-						Самое главное — приходите на собеседование в хорошем настроении!
+						And, most importantly, bring a smile with you!
 					</Text>
 				</StackItem>
 				<StackItem width="33.333%" lg-display="none">

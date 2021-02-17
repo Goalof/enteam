@@ -11,9 +11,11 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"uteam"} />
 		<Helmet>
 			<title>
-				Команда - Работа в uTeam
+				uTeam - Jobs at uTeam
 			</title>
-			<meta name={"description"} content={"uTeam – команда, которая создаёт наши сервисы: uKit, uLanding, uCoz, uCalc. Гордимся не только сервисами, которые создаём, но и тем, что умеем превращать команды профессионалов в настоящих друзей."} />
+			<meta name={"description"} content={"uTeam are people behind uKit, uLanding, uCoz and uCalc services. We take pride not only in creating these services for you but also in turning the teams of professionals into true friends."} />
+			<meta property={"og:description"} content={"Job at uCoz. Job opportunities currently available at uCoz. Office and remote work. Learn how to join us and what it's like working in uTeam."} />
+			<meta property={"og:image"} content={"https://images.unsplash.com/photo-1612832021455-245704c6755a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.Header />
@@ -34,8 +36,7 @@ export default (() => {
 						color="#263238"
 						sm-font="normal 900 53px/1.2 'AvenirNextCyrBold', sans-serif"
 					>
-						Команда
-						<br />
+						uTeam
 					</Text>
 					{"    "}
 				</StackItem>
@@ -52,12 +53,11 @@ export default (() => {
 						letter-spacing="0.3px"
 						sm-font="normal 400 18px/26px 'AvenirNextCyrRegular', sans-serif"
 					>
-						Мы гордимся не только теми сервисами, которые мы делаем для вас каждый день, но и тем, что умеем превращать профессионалов своего дела в настоящих друзей и членов одной семьи. Посмотрите, как мы живем, — возможно, именно в этой атмосфере и среди этих людей вы окажетесь очень скоро.
-						<br />
+						We take pride not only in delivering professional services that meet your needs, but also in making friends within the team. Together, we are more than skilled specialists, we are a big family. Have a look at the people behind uProjects and learn what it’s like to work here. Perhaps, you’ll join us very soon.
 					</Text>
 					{"    "}
 				</StackItem>
-				<StackItem width="100%" display="flex">
+				<StackItem width="100%" display="none">
 					<Override slot="StackItemContent" align-items="center" justify-content="center" />
 					{"        "}
 					<Components.Slider width="100%" slides="http://ru.uteam.pro/img/members/new_ourteam_page/24.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/23.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/20.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/19.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/18.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/17.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/16.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/15.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/14.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/13.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/12.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/10.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/09.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/08.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/07.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/06.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/05.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/04.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/03.jpg,http://ru.uteam.pro/img/members/new_ourteam_page/02.jpg">
@@ -193,7 +193,7 @@ export default (() => {
 									transition="all 0.2s linear 0s"
 									focus-box-shadow="none"
 								>
-									Москва
+									Moscow
 								</Button>
 							</Components.TabItem>
 							<Components.TabItem
@@ -230,7 +230,7 @@ export default (() => {
 									transition="all 0.2s linear 0s"
 									focus-box-shadow="none"
 								>
-									Санкт-Петербург
+									Saint Petersburg
 								</Button>
 							</Components.TabItem>
 							<Components.TabItem
@@ -267,7 +267,7 @@ export default (() => {
 									transition="all 0.2s linear 0s"
 									focus-box-shadow="none"
 								>
-									Ростов-на-Дону
+									Rostov-on-Don
 								</Button>
 							</Components.TabItem>
 							<Components.TabItem
@@ -304,7 +304,7 @@ export default (() => {
 									transition="all 0.2s linear 0s"
 									focus-box-shadow="none"
 								>
-									Черкассы
+									Cherkassy
 								</Button>
 							</Components.TabItem>
 						</Components.TabList>
@@ -331,7 +331,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											9 сотрудников
+											9 employees
 										</Text>
 										<Text
 											font="normal 400 18px/26px 'AvenirNextCyrMedium', sans-serif"
@@ -344,8 +344,7 @@ export default (() => {
 											color="#9BABBF"
 											lg-text-align="center"
 										>
-											В московском офисе компании находится руководство, команды продуктологов, маркетинга, PR и бухгалтерия.
-											<br />
+											The Moscow office of the company hosts senior managers, product, marketing and PR teams, as well as the accounting department.
 										</Text>
 										{"    "}
 									</StackItem>
@@ -375,7 +374,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Курт
+											Evgeny Kurt
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -417,7 +416,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Ирина Черепанова
+											Irina Cherepanova
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -429,7 +428,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Директор по продуктам
+											CPO
 										</Text>
 										{"    "}
 									</StackItem>
@@ -459,7 +458,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Зарина Татрова
+											Zarina Tatrova
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -471,7 +470,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Главный бухгалтер
+											Chief Accountant
 										</Text>
 										{"    "}
 									</StackItem>
@@ -501,7 +500,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Алексей Попов
+											Alexey Popov
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -513,7 +512,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Менеджер проектов
+											Project Manager
 										</Text>
 										{"    "}
 									</StackItem>
@@ -550,7 +549,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											специалистов
+											specialists{"\n\n"}
 										</Text>
 										{"    "}
 									</StackItem>
@@ -579,7 +578,8 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											15 сотрудников
+											15 
+employees{"\n\n"}
 										</Text>
 										<Text
 											font="normal 400 18px/26px 'AvenirNextCyrMedium', sans-serif"
@@ -592,7 +592,7 @@ export default (() => {
 											color="#9BABBF"
 											lg-text-align="center"
 										>
-											В питерском офисе работает одна из команд uKit. Тут созданы сервисы uSocial, uPartner, Divly.
+											The St. Pete office is a workplace for one of the uKit teams.uSocial, uPartner and Divly services were created here.
 										</Text>
 										{"    "}
 									</StackItem>
@@ -623,7 +623,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Олег Лисовенко
+											Oleg Lisovenko
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -635,7 +635,9 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Менеджер проектов Divly, uSocial
+											Project Manager
+											<br />
+											of Divly and uSocial{"\n\n"}
 										</Text>
 										{"    "}
 									</StackItem>
@@ -666,7 +668,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Олег Павлов
+											Oleg Pavlov
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -678,7 +680,9 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											SMM и direct-маркетолог
+											SMM and Direct Marketer
+											<br />
+											{"\n\n"}
 										</Text>
 										{"    "}
 									</StackItem>
@@ -709,7 +713,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Виктор Кузнецов
+											Viktor Kuznetsov
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -721,7 +725,9 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Руководитель службы технической поддержки
+											Head of Technical
+											<br />
+											Support Team{"\n\n"}
 										</Text>
 										{"    "}
 									</StackItem>
@@ -759,7 +765,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											специалистов
+											specialists{"\n\n"}
 										</Text>
 										{"    "}
 									</StackItem>
@@ -788,7 +794,8 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											59 сотрудников
+											59 
+employees{"\n\n"}
 										</Text>
 										<Text
 											font="normal 400 18px/26px 'AvenirNextCyrMedium', sans-serif"
@@ -801,7 +808,7 @@ export default (() => {
 											color="#9BABBF"
 											lg-text-align="center"
 										>
-											В ростовском офисе самая большая команда. Тут разрабатываются проекты uKit, uCalc, uLanding, uWeb и Web Tycoon.
+											The biggest team works in the Rostov office. This is the place where uKit is being developed. The teams of the uKit AI, uLanding, uCalc and Web Tycoon projects work here.
 										</Text>
 										{"    "}
 									</StackItem>
@@ -832,7 +839,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Павел Кудинов
+											Pavel Kudinov
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -844,7 +851,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Технический директор uKit, Руководитель uKit AI
+											CTO, Head of uKit AI
 										</Text>
 										{"    "}
 									</StackItem>
@@ -875,7 +882,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Михаил Гуревич
+											Mikhail Gurevich
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -887,7 +894,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Финансовый директор
+											CFO
 										</Text>
 										{"    "}
 									</StackItem>
@@ -918,8 +925,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Татьяна Жукова
-											<br />
+											Tatiana Zhukova
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -931,9 +937,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Руководитель
-											<br />
-											отдела локализации
+											Localization Manager
 										</Text>
 										{"    "}
 									</StackItem>
@@ -964,8 +968,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Евгений Мудров
-											<br />
+											Evgeny Mudrov
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -977,8 +980,9 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Разработчик ядра uKit AI
+											Developer{" "}
 											<br />
+											of uKit AI Core
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1009,7 +1013,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Андрей Дербитов
+											Andrey Derbitov
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1021,7 +1025,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Старший разработчик uLanding
+											Full-Stack Developer
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1052,7 +1056,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Виктор Кадников
+											Viktor Kadnikov
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1064,8 +1068,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Арт-директор uKit
-											<br />
+											Art Director at uKit
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1103,7 +1106,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											специалистов
+											specialists{"\n\n"}
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1132,7 +1135,8 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											25 сотрудников
+											25 
+employees{"\n\n"}
 										</Text>
 										<Text
 											font="normal 400 18px/26px 'AvenirNextCyrMedium', sans-serif"
@@ -1145,7 +1149,7 @@ export default (() => {
 											color="#9BABBF"
 											lg-text-align="center"
 										>
-											Исторически самый первый офис компании. Здесь разрабатывается легендарный uCoz, а также uID.me и uShop.
+											Historically, this is the first office of the company. Here the legendary uCoz, as well as uID.me and uShop are being developed.
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1176,7 +1180,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Иван Колпаков
+											Ivan Kolpakov
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1188,7 +1192,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Технический директор uCoz
+											CTO at uCoz
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1219,7 +1223,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Алексей Донец
+											Alexey Donets
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1231,9 +1235,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Интернет-маркетолог,
-											<br />
-											SEO-специалист
+											Marketing, SEO and PR Specialist
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1264,7 +1266,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Иван Латанюк
+											Ivan Latanyuk
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1276,7 +1278,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Старший разработчик uCoz, uID.me
+											Senior Developer of uCoz and uID.me
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1307,8 +1309,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Наталья Переясловец
-											<br />
+											Nataliya Pereyaslovets
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1320,7 +1321,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Старший QA-инженер
+											Senior QA Engineer
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1351,7 +1352,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											Игорь Чубенко
+											Igor Chubenko
 										</Text>
 										<Text
 											font="normal 400 14px/18px 'AvenirNextCyrMedium', sans-serif"
@@ -1363,7 +1364,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#9BABBF"
 										>
-											Старший разработчик uShop
+											Senior Developer of uShop
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1401,7 +1402,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											специалистов
+											specialists{"\n\n"}
 										</Text>
 										{"    "}
 									</StackItem>
@@ -1428,10 +1429,10 @@ export default (() => {
 				>
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					<Text font="42px/28px 'AvenirNextCyrBold', sans-serif" margin="0px 0px 16px 0px" color="#fff">
-						от 3-x лет
+						From 3 years
 					</Text>
 					<Text font="18px/28px 'AvenirNextCyrMedium', sans-serif" margin="8px 0px 0px 0px" text-align="center" color="#fff">
-						опыта на своей позиции у каждого ключевого участника команды
+						is the work experience of each key team member in the relevant position
 					</Text>
 					{"            "}
 				</StackItem>
@@ -1444,34 +1445,34 @@ export default (() => {
 				>
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					<Text font="42px/28px 'AvenirNextCyrBold', sans-serif" margin="0px 0px 16px 0px" color="#fff">
-						15 лет
+						15 years
 					</Text>
 					<Text font="18px/28px 'AvenirNextCyrMedium', sans-serif" margin="8px 0px 0px 0px" text-align="center" color="#fff">
-						на рынке SaaS-решений для создания сайтов и оптимизации их конверсии
-					</Text>
-					{"            "}
-				</StackItem>
-				<StackItem
-					width="33.333%"
-					display="flex"
-					sm-width="100%"
-					md-width="100%"
-					md-margin="0px 0px 17px 0px"
-				>
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
-					<Text font="42px/28px 'AvenirNextCyrBold', sans-serif" margin="0px 0px 16px 0px" color="#fff">
-						7 проектов
-					</Text>
-					<Text font="18px/28px 'AvenirNextCyrMedium', sans-serif" margin="8px 0px 0px 0px" text-align="center" color="#fff">
-						выпущены совместно и успешно работают
+						on the SaaS solutions market for creating websites and optimizing their conversions
 						<br />
+					</Text>
+					{"            "}
+				</StackItem>
+				<StackItem
+					width="33.333%"
+					display="flex"
+					sm-width="100%"
+					md-width="100%"
+					md-margin="0px 0px 17px 0px"
+				>
+					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
+					<Text font="42px/28px 'AvenirNextCyrBold', sans-serif" margin="0px 0px 16px 0px" color="#fff">
+						7 projects
+					</Text>
+					<Text font="18px/28px 'AvenirNextCyrMedium', sans-serif" margin="8px 0px 0px 0px" text-align="center" color="#fff">
+						collectively released and working successfully
 					</Text>
 					{"            "}
 				</StackItem>
 				{"    "}
 			</Stack>
 		</Section>
-		<Section padding="60px 0 80px 0" sm-padding="30px 0 40px 0" background="#eef2f3">
+		<Section padding="60px 0 80px 0" sm-padding="30px 0 40px 0" background="#eef2f3" display="none">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="975px" width="100%">
 				{"    "}
@@ -1702,7 +1703,7 @@ export default (() => {
 					>
 						<Icon category="fa" icon={FaInstagram} margin="-1px 12px 0px 0px" />
 						<Text margin="0px 0px 0px 0px">
-							Жизнь команды в Instagram
+							Follow our team on Instagram
 						</Text>
 					</Link>
 					{"            "}
@@ -1729,7 +1730,7 @@ export default (() => {
 						target="_blank"
 						margin="0px 24px 0px 0px"
 					>
-						uCoz в ВК
+						uCoz on Facebook
 						<Image width="100px" height="100px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/ucoz.png?v=2021-02-01T22:05:06.991Z" margin="18px 0px 0px 0px" />
 					</Link>
 					<Link
@@ -1745,7 +1746,7 @@ export default (() => {
 						hover-color="#4A8CFA"
 						target="_blank"
 					>
-						uKit в ВК
+						uKit on Facebook
 						<Image width="100px" height="100px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/5.png?v=2021-01-28T01:00:02.248Z" margin="18px 0px 0px 0px" />
 					</Link>
 					{"            "}

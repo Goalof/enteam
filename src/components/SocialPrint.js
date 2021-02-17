@@ -76,7 +76,7 @@ const SocialPrint = props => {
 		<div {...override("div")} />
 		<Image {...override("image")} />
 		<Link {...override("link")}>
-			Распечатать вакансию
+			Print this page
 			<Icon {...override("icon")} />
 		</Link>
 		{children}

@@ -11,9 +11,11 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
 		<Helmet>
 			<title>
-				Главная - Работа в uTeam
+				Home - Jobs at uTeam
 			</title>
-			<meta name={"description"} content={"Работа в uCoz. Актуальные вакансии компании в российских офисах и удаленная работа. Как попасть в команду, и о нашем коллективе — uTeam."} />
+			<meta name={"description"} content={"Job at uCoz. Job opportunities currently available at uCoz. Office and remote work. Learn how to join us and what it's like working in uTeam."} />
+			<meta property={"og:description"} content={"Job at uCoz. Job opportunities currently available at uCoz. Office and remote work. Learn how to join us and what it's like working in uTeam."} />
+			<meta property={"og:image"} content={"https://images.unsplash.com/photo-1612832021455-245704c6755a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=2000"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Section
@@ -41,7 +43,6 @@ export default (() => {
 					<Box display="flex" align-items="center">
 						<Link href="/">
 							<Image
-								loading="lazy"
 								src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/logowhite.svg?v=2021-01-26T19:12:20.383Z"
 								color="#ffffff"
 								width="50px"
@@ -51,7 +52,31 @@ export default (() => {
 							/>
 						</Link>
 						<Text font="normal 500 18px/50px 'AvenirNextCyrMedium', sans-serif" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
-							<Link href="https://ru.uteam.pro/" color="#ffffff" text-decoration-line="initial" font="500 18px/50px ">
+							<Link href="http://en.uteam.pro/" color="#ffffff" text-decoration-line="initial" font="500 18px/50px ">
+								Careers for Foreigners
+							</Link>
+						</Text>
+						<Text
+							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+							margin="3px 0px 0px 12px"
+							display="inline-block"
+							color="#ffffff"
+							nout-display="none"
+						>
+							<Link
+								href="https://ru.uteam.pro/"
+								color="#ffffff"
+								text-decoration-line="initial"
+								hover-color="#ffe02d"
+								transition="color 0.2s ease 0s"
+								data-q-widget-type="PRIMITIVE"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+							>
 								Вакансии в России
 							</Link>
 						</Text>
@@ -70,23 +95,6 @@ export default (() => {
 								transition="color 0.2s ease 0s"
 							>
 								Вакансії в Україні{" "}
-							</Link>
-						</Text>
-						<Text
-							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
-							margin="3px 0px 0px 12px"
-							display="inline-block"
-							color="#ffffff"
-							nout-display="none"
-						>
-							<Link
-								href="http://en.uteam.pro/"
-								color="#ffffff"
-								text-decoration-line="initial"
-								hover-color="#ffe02d"
-								transition="color 0.2s ease 0s"
-							>
-								Applying from overseas
 							</Link>
 						</Text>
 					</Box>
@@ -135,12 +143,12 @@ export default (() => {
 						/>
 						<Override
 							slot="Button Liner"
-							nout-background="#ffffff"
 							nout-min-height="3px"
 							border-radius="6px"
 							nout-position="absolute"
 							min-height={0}
 							min-width={0}
+							nout-background="#000000"
 						/>
 						<Override
 							slot="Button Liner1"
@@ -151,9 +159,9 @@ export default (() => {
 						/>
 						<Override slot="Button Liner2" nout-top="11px" nout-border-radius="6px" nout-right="0px" />
 						<Override slot="Button Liner3" nout-top="18px" nout-border-radius="6px" nout-right="0px" />
-						<Override slot="Button Liner1 :closed" nout-width="22px" />
-						<Override slot="Button Liner2 :closed" nout-width="22px" />
-						<Override slot="Button Liner3 :closed" nout-width="22px" />
+						<Override slot="Button Liner1 :closed" nout-width="22px" nout-background="#000000" />
+						<Override slot="Button Liner2 :closed" nout-width="22px" nout-background="#000000" />
+						<Override slot="Button Liner3 :closed" nout-width="22px" nout-background="#000000" />
 						<Override slot="Button Liner2 :open" nout-opacity="0" nout-width="32px" />
 						<Override slot="Button Liner1 :open" nout-width="36px" nout-transform="translateY(12px) rotate(225deg)" nout-background="--color-dark" />
 						<Override slot="Button Liner3 :open" nout-width="36px" nout-transform="translateY(-12px) rotate(135deg)" background="--color-green" />
@@ -168,7 +176,6 @@ export default (() => {
 							nout-margin="0px 0px 0px 33px"
 						>
 							<Image
-								loading="lazy"
 								width="64px"
 								height="64px"
 								nout-width="50px"
@@ -186,7 +193,7 @@ export default (() => {
 								nout-margin="24px 0px 24px 12px"
 								nout-font="normal 500 18px/42px 'AvenirNextCyrMedium', sans-serif"
 							>
-								Вакансии в России
+								Careers for Foreigners
 							</Text>
 						</Box>
 						<Menu
@@ -211,7 +218,19 @@ export default (() => {
 							/>
 							<Override slot="item" nout-padding="15px 25px 15px 25px" />
 							<Override slot="link-index">
-								Главная
+								Home
+							</Override>
+							<Override slot="link-vacancies">
+								Jobs
+							</Override>
+							<Override slot="link-uteam">
+								uTeam
+							</Override>
+							<Override slot="link-resume">
+								Join Us
+							</Override>
+							<Override slot="link-contacts">
+								Contact
 							</Override>
 						</Menu>
 						<StackItem width="70%" display="flex" lg-width="100%" nout-width="100%">
@@ -246,7 +265,7 @@ export default (() => {
 									nout-font="18px AvenirNextCyrRegular, sans-serif"
 									nout-padding="0px 0px 0px 0px"
 								>
-									Careers for Foreigners
+									Вакансии в России
 								</Link>
 							</Text>
 							<Text
@@ -429,7 +448,6 @@ export default (() => {
 					<Override slot="StackItemContent" flex-direction="column" nout-align-items="flex-end" />
 					{"        "}
 					<Image
-						loading="lazy"
 						width="100%"
 						src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/vectorpaint%20(1).svg?v=2021-01-25T11:01:19.138Z"
 						margin="-28px -2px 0px 0px"
@@ -440,14 +458,14 @@ export default (() => {
 					/>
 					<Text
 						color="#ffffff"
-						font="1000 29vw/0.6 'AvenirNextCyrBold', sans-serif"
+						font="1000 28vw/0.6 'AvenirNextCyrBold', sans-serif"
 						margin="-10px 0px 50px 10px"
 						width="100%"
 						text-align="right"
 						nout-margin="10px 0px 50px 20px"
 						nout-font="1000 33vw/0.6 'AvenirNextCyrBold', sans-serif"
 					>
-						165
+						123
 					</Text>
 					<Box
 						padding="0 14% 0 14%"
@@ -467,10 +485,10 @@ export default (() => {
 							padding="0 0px 0 0px"
 							nout-font="bold 21px/30px 'AvenirNextCyrRegular', sans-serif"
 						>
-							и более сотрудников успешно работают и отдыхают с нами на протяжении тринадцати лет и не жалеют об этом
+							and more employees have been working and having fun with us since 2005
 						</Text>
 						<Text margin="0px 0px 10px 0px" color="#ffffff" font="--lead" nout-font="normal 400 16px/24px 'AvenirNextCyrRegular', sans-serif">
-							Мы верим, что в мире есть масса возможностей заниматься тем, что по‑настоящему нравится, и точно знаем, что это можно делать у нас в компании.{" "}
+							We believe that there is a myriad of opportunities to do things you're passionate about, and we know for sure you can do them right here in this company.
 						</Text>
 					</Box>
 					{"    "}
@@ -500,12 +518,12 @@ export default (() => {
 					hover-left="0px"
 				>
 					<Box padding="0 0% 0 0%" display="flex" flex-direction="column" align-items="flex-start">
-						Присоединяйся к нам!
+						Want to join our team?
 						<Box padding="0 0% 0 0%" display="flex" align-items="center">
 							<Text margin="0px 8px 0px 0px" font="500 16px/30px 'AvenirNextCyrMedium', sans-serif" letter-spacing=".5px">
-								Отправить резюме
+								Apply now
 							</Text>
-							<Image loading="lazy" width="31px" height="12px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/arrowpop.svg?v=2021-01-26T22:37:32.256Z" />
+							<Image width="31px" height="12px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/arrowpop.svg?v=2021-01-26T22:37:32.256Z" />
 						</Box>
 					</Box>
 				</Override>
@@ -532,26 +550,25 @@ export default (() => {
 				<Section padding="0px 0 40px 0">
 					<Override slot="SectionContent" align-items="center" width="100%" />
 					<Components.EmbedHTML width="100%" />
-					<Components.EmbedJS />
 				</Section>
 			</Components.PopUp>
 			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%" gap="16px">
 				{"    "}
-				<StackItem width="25%" display="flex">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
+				<StackItem width="50%" display="flex">
+					<Override slot="StackItemContent" align-items="center" justify-content="flex-end" margin="0px 10px 0px 0px" />
 					{"        "}
 					<Link
-						href="/vacancies/#msk"
+						href="/vacancies/#all"
 						text-decoration-line="initial"
-						color="#ffd83a"
+						color="#afc1db"
 						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
-						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
+						cursor="default"
 					>
-						Москва
+						Office work
 						<br />
 						<Span
-							color="#ffffff"
+							color="#afc1db"
 							font="600 12px/24px AvenirNextCyrRegular, sans-serif"
 							data-q-widget-type="PRIMITIVE"
 							overflow-wrap="normal"
@@ -561,23 +578,23 @@ export default (() => {
 							text-overflow="clip"
 							hyphens="manual"
 						>
-							1 вакансия
+							No jobs
 						</Span>
 					</Link>
 					{"    "}
 				</StackItem>
-				<StackItem width="25%" display="flex">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
+				<StackItem width="50%" display="flex">
+					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" margin="0px 0px 0px 10px" />
 					{"        "}
 					<Link
-						href="/vacancies/#spb"
+						href="/vacancies/#all"
 						text-decoration-line="initial"
 						color="#ffd83a"
 						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
 						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
 					>
-						Санкт-Петербург
+						Remote work
 						<br />
 						<Span
 							color="#ffffff"
@@ -590,65 +607,7 @@ export default (() => {
 							text-overflow="clip"
 							hyphens="manual"
 						>
-							4 вакансия
-						</Span>
-					</Link>
-					{"    "}
-				</StackItem>
-				<StackItem width="25%" display="flex">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
-					{"        "}
-					<Link
-						href="/vacancies/#rnd"
-						text-decoration-line="initial"
-						color="#ffd83a"
-						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
-						hover-color="#ffffff"
-						transition="all 0.2s linear 0s"
-					>
-						Ростов-на-Дону
-						<br />
-						<Span
-							color="#ffffff"
-							font="600 12px/24px AvenirNextCyrRegular, sans-serif"
-							data-q-widget-type="PRIMITIVE"
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-						>
-							5 вакансия
-						</Span>
-					</Link>
-					{"    "}
-				</StackItem>
-				<StackItem width="25%" display="flex">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
-					{"        "}
-					<Link
-						href="/vacancies/#fl"
-						text-decoration-line="initial"
-						color="#ffd83a"
-						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
-						hover-color="#ffffff"
-						transition="all 0.2s linear 0s"
-					>
-						Удаленная работа
-						<br />
-						<Span
-							color="#ffffff"
-							font="600 12px/24px AvenirNextCyrRegular, sans-serif"
-							data-q-widget-type="PRIMITIVE"
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-						>
-							3 вакансия
+							1 job
 						</Span>
 					</Link>
 					{"    "}
@@ -660,7 +619,7 @@ export default (() => {
 				<StackItem width="100%" display="flex">
 					{"        "}
 					<Link href="#header">
-						<Image loading="lazy" width="32px" height="53px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/vectorpaint%20(2).svg?v=2021-01-25T11:04:32.639Z" />
+						<Image width="32px" height="53px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/vectorpaint%20(2).svg?v=2021-01-25T11:04:32.639Z" />
 					</Link>
 					{"    "}
 				</StackItem>
@@ -693,7 +652,6 @@ export default (() => {
 					<Box display="flex" align-items="center">
 						<Link href="/">
 							<Image
-								loading="lazy"
 								src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/logoblue.svg?v=2021-01-25T20:59:50.954Z"
 								color="#ffffff"
 								width="50px"
@@ -703,7 +661,31 @@ export default (() => {
 							/>
 						</Link>
 						<Text font="normal 600 18px/50px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 0px 0px" display="inline-block" color="#ffffff">
-							<Link href="https://ru.uteam.pro/" color="#000000" text-decoration-line="initial" font="500 18px/50px 'AvenirNextCyrMedium', sans-serif">
+							<Link href="/" color="#000000" text-decoration-line="initial" font="500 18px/50px 'AvenirNextCyrMedium', sans-serif">
+								Careers for Foreigners
+							</Link>
+						</Text>
+						<Text
+							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
+							margin="3px 0px 0px 12px"
+							display="inline-block"
+							color="#9BABBF"
+							nout-display="none"
+						>
+							<Link
+								href="http://ru.uteam.pro/"
+								color="#9BABBF"
+								text-decoration-line="initial"
+								hover-color="#ffe02d"
+								transition="color 0.2s ease 0s"
+								data-q-widget-type="PRIMITIVE"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+							>
 								Вакансии в России
 							</Link>
 						</Text>
@@ -722,23 +704,6 @@ export default (() => {
 								transition="color 0.2s ease 0s"
 							>
 								Вакансії в Україні{" "}
-							</Link>
-						</Text>
-						<Text
-							font="normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif"
-							margin="3px 0px 0px 12px"
-							display="inline-block"
-							color="#9BABBF"
-							nout-display="none"
-						>
-							<Link
-								href="http://en.uteam.pro/"
-								color="#9BABBF"
-								text-decoration-line="initial"
-								hover-color="#ffe02d"
-								transition="color 0.2s ease 0s"
-							>
-								Applying from overseas
 							</Link>
 						</Text>
 					</Box>
@@ -817,7 +782,6 @@ export default (() => {
 							nout-margin="0px 0px 0px 33px"
 						>
 							<Image
-								loading="lazy"
 								width="64px"
 								height="64px"
 								nout-width="50px"
@@ -835,7 +799,7 @@ export default (() => {
 								nout-margin="24px 0px 24px 12px"
 								nout-font="normal 500 18px/42px 'AvenirNextCyrMedium', sans-serif"
 							>
-								Вакансии в России
+								Careers for Foreigners
 							</Text>
 						</Box>
 						<Menu
@@ -860,7 +824,19 @@ export default (() => {
 							/>
 							<Override slot="item" nout-padding="15px 25px 15px 25px" />
 							<Override slot="link-index">
-								Главная
+								Home
+							</Override>
+							<Override slot="link-vacancies">
+								Jobs
+							</Override>
+							<Override slot="link-uteam">
+								uTeam
+							</Override>
+							<Override slot="link-resume">
+								Join Us
+							</Override>
+							<Override slot="link-contacts">
+								Contact
 							</Override>
 						</Menu>
 						<StackItem width="70%" display="flex" lg-width="100%" nout-width="100%">
@@ -895,7 +871,7 @@ export default (() => {
 									nout-font="18px AvenirNextCyrRegular, sans-serif"
 									nout-padding="0px 0px 0px 0px"
 								>
-									Careers for Foreigners
+									Вакансии в России
 								</Link>
 							</Text>
 							<Text
@@ -1059,7 +1035,7 @@ export default (() => {
 					<Menu display="flex" nout-display="none">
 						<Override slot="item-404" display="none" />
 						<Override slot="link-index" text-decoration-line="initial">
-							Главная
+							Home
 						</Override>
 						<Override slot="item-active" color="#4a8cfa" />
 						<Override slot="link-active" color="#4a8cfa" />
@@ -1073,6 +1049,15 @@ export default (() => {
 						/>
 						<Override slot="link-uteam">
 							uTeam
+						</Override>
+						<Override slot="link-vacancies">
+							Jobs
+						</Override>
+						<Override slot="link-resume">
+							Join Us
+						</Override>
+						<Override slot="link-contacts">
+							Contact
 						</Override>
 					</Menu>
 					{"        "}
@@ -1094,7 +1079,7 @@ export default (() => {
 						sm-text-align="center"
 						sm-margin="0px 0px 30px 0px"
 					>
-						Работай с комфортом!
+						Stay comfortable while doing your dream job!
 					</Text>
 					{"    "}
 				</StackItem>
@@ -1102,7 +1087,7 @@ export default (() => {
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image loading="lazy" width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-27T14:59:58.221Z" />
+					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon1.svg?v=2021-01-27T14:59:58.221Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 70px 0px"
@@ -1112,9 +1097,9 @@ export default (() => {
 						color="#263238"
 						sm-margin="23px 0px 20px 0px"
 					>
-						Гибкий график
+						Flexible work
 						<br />
-						работы
+						schedule
 					</Text>
 					{"    "}
 				</StackItem>
@@ -1131,18 +1116,16 @@ export default (() => {
 						color="#263238"
 						sm-margin="23px 0px 20px 0px"
 					>
-						Профессиональное
+						Professional growth
 						<br />
-						развитие и
-						<br />
-						обучение
+						and training
 					</Text>
 					{"    "}
 				</StackItem>
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image loading="lazy" width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon3.svg?v=2021-01-27T14:59:58.223Z" />
+					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon3.svg?v=2021-01-27T14:59:58.223Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 70px 0px"
@@ -1152,17 +1135,18 @@ export default (() => {
 						color="#263238"
 						sm-margin="23px 0px 20px 0px"
 					>
-						Социальные
+						Social security, DMS
 						<br />
-						гарантии, ДМС
+						(voluntary medical
 						<br />
+						insurance)
 					</Text>
 					{"    "}
 				</StackItem>
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image loading="lazy" width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon4.svg?v=2021-01-27T14:59:58.223Z" />
+					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/icon4.svg?v=2021-01-27T14:59:58.223Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 0px 0px"
@@ -1171,19 +1155,16 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						Совместный отдых
+						Team outings
 						<br />
-						и корпоративные
-						<br />
-						мероприятия
-						<br />
+						and corporate events
 					</Text>
 					{"    "}
 				</StackItem>
 				<StackItem width="33.3333%" display="flex" sm-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image loading="lazy" width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/work.svg?v=2021-02-08T10:30:40.438Z" />
+					<Image width="74px" height="70px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/work.svg?v=2021-02-08T10:30:40.438Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 0px 0px"
@@ -1192,9 +1173,9 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						Комфортные
+						Comfortable working
 						<br />
-						условия работы
+						conditions
 					</Text>
 					{"    "}
 				</StackItem>
@@ -1210,16 +1191,15 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						Бесплатное питание
+						In-office
 						<br />
-						в офисе
-						<br />
+						free meals
 					</Text>
 					{"    "}
 				</StackItem>
 			</Stack>
 		</Section>
-		<Section padding="24px 0 38px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/Photo2.jpg?v=2021-01-25T00:03:55.645Z) center/cover no-repeat fixed padding-box">
+		<Section padding="24px 0 38px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/Photo2.jpg?v=2021-02-16T10:29:31.547Z) center/cover no-repeat fixed padding-box">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" width="100%" max-width="750px" gap="--cmp-stack-gap-small">
 				{"    "}
@@ -1227,30 +1207,29 @@ export default (() => {
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" color="#ffffff" />
 					{"        "}
 					<Text font="--headline3" margin="0px 0px 0px -3px" display="inline-block" text-align="left">
-						Вакансии
-						<br />
+						Open Positions
 					</Text>
 					{"    "}
 				</StackItem>
 				{"    "}
 			</Stack>
-			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%" gap="--cmp-stack-gap-small">
+			<Stack margin="0px 0px 0px 0px" max-width="750px" width="100%" gap="16px">
 				{"    "}
-				<StackItem width="25%" display="flex" sm-width="100%" md-width="50%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
+				<StackItem width="25%" display="flex" sm-width="100%">
+					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" margin="0px 10px 0px 0px" />
 					{"        "}
 					<Link
-						href="/vacancies/#msk"
+						href="/vacancies/#all"
 						text-decoration-line="initial"
-						color="#ffd83a"
+						color="#afc1db"
 						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
-						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
+						cursor="default"
 					>
-						Москва
+						Office work
 						<br />
 						<Span
-							color="#ffffff"
+							color="#afc1db"
 							font="600 12px/24px AvenirNextCyrRegular, sans-serif"
 							data-q-widget-type="PRIMITIVE"
 							overflow-wrap="normal"
@@ -1260,23 +1239,23 @@ export default (() => {
 							text-overflow="clip"
 							hyphens="manual"
 						>
-							1 вакансия
+							No jobs
 						</Span>
 					</Link>
 					{"    "}
 				</StackItem>
-				<StackItem width="25%" display="flex" sm-width="100%" md-width="50%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
+				<StackItem width="75%" display="flex" sm-width="100%">
+					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" margin="0px 0px 0px 10px" />
 					{"        "}
 					<Link
-						href="/vacancies/#spb"
+						href="/vacancies/#all"
 						text-decoration-line="initial"
 						color="#ffd83a"
 						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
 						hover-color="#ffffff"
 						transition="all 0.2s linear 0s"
 					>
-						Санкт-Петербург
+						Remote work
 						<br />
 						<Span
 							color="#ffffff"
@@ -1289,65 +1268,7 @@ export default (() => {
 							text-overflow="clip"
 							hyphens="manual"
 						>
-							4 вакансия
-						</Span>
-					</Link>
-					{"    "}
-				</StackItem>
-				<StackItem width="25%" display="flex" sm-width="100%" md-width="50%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
-					{"        "}
-					<Link
-						href="/vacancies/#rnd"
-						text-decoration-line="initial"
-						color="#ffd83a"
-						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
-						hover-color="#ffffff"
-						transition="all 0.2s linear 0s"
-					>
-						Ростов-на-Дону
-						<br />
-						<Span
-							color="#ffffff"
-							font="600 12px/24px AvenirNextCyrRegular, sans-serif"
-							data-q-widget-type="PRIMITIVE"
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-						>
-							5 вакансия
-						</Span>
-					</Link>
-					{"    "}
-				</StackItem>
-				<StackItem width="25%" display="flex" sm-width="100%" md-width="50%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" />
-					{"        "}
-					<Link
-						href="/vacancies/#fl"
-						text-decoration-line="initial"
-						color="#ffd83a"
-						font="normal 600 18px/24px 'AvenirNextCyrRegular', sans-serif"
-						hover-color="#ffffff"
-						transition="all 0.2s linear 0s"
-					>
-						Удаленная работа
-						<br />
-						<Span
-							color="#ffffff"
-							font="600 12px/24px AvenirNextCyrRegular, sans-serif"
-							data-q-widget-type="PRIMITIVE"
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-						>
-							3 вакансия
+							1 job
 						</Span>
 					</Link>
 					{"    "}
@@ -1363,7 +1284,8 @@ export default (() => {
 					<Override slot="StackItemContent" align-items="center" justify-content="center" />
 					{"        "}
 					<Text font="--headline3" margin="0px 0px 40px 0px" display="inline-block" text-align="center">
-						Команда uTeam
+						Our Team
+						<br />
 					</Text>
 					{"    "}
 				</StackItem>
@@ -1371,7 +1293,7 @@ export default (() => {
 				<StackItem width="25%" display="flex" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
 					{"        "}
-					<Image loading="lazy" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/laurel.svg?v=2021-01-26T17:35:48.102Z" />
+					<Image src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/laurel.svg?v=2021-01-26T17:35:48.102Z" />
 					<Text
 						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
 						margin="23px 0px 0px 0px"
@@ -1380,10 +1302,9 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						Лауреат
+						Runet Prize
 						<br />
-						«Премии Рунета»
-						<br />
+						Winner
 					</Text>
 					{"    "}
 				</StackItem>
@@ -1399,29 +1320,9 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						Лучший
+						Best Corporate
 						<br />
-						корпоративный сайт
-						<br />
-					</Text>
-					{"    "}
-				</StackItem>
-				<StackItem width="25%" display="flex" md-width="50%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
-					{"        "}
-					<Image loading="lazy" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/laurel.svg?v=2021-01-26T17:35:48.102Z" />
-					<Text
-						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
-						margin="23px 0px 0px 0px"
-						display="inline-block"
-						padding="0px 0px 0px 0px"
-						text-align="center"
-						color="#263238"
-					>
-						III место
-						<br />
-						в «Народной десятке»
-						<br />
+						Website
 					</Text>
 					{"    "}
 				</StackItem>
@@ -1437,10 +1338,27 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						Победитель
+						Third Place
 						<br />
+						in People's Ten
+					</Text>
+					{"    "}
+				</StackItem>
+				<StackItem width="25%" display="flex" md-width="50%">
+					<Override slot="StackItemContent" align-items="center" justify-content="flex-start" flex-direction="column" />
+					{"        "}
+					<Image src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/laurel.svg?v=2021-01-26T17:35:48.102Z" />
+					<Text
+						font="normal 500 15px/18px 'AvenirNextCyrMedium'"
+						margin="23px 0px 0px 0px"
+						display="inline-block"
+						padding="0px 0px 0px 0px"
+						text-align="center"
+						color="#263238"
+					>
 						Open Web Awards
 						<br />
+						Winner
 					</Text>
 					{"    "}
 				</StackItem>
@@ -1480,12 +1398,11 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						лет стабильной
+						years
 						<br />
-						работы крупнейшего
+						of stable work as
 						<br />
-						сервиса Рунета
-						<br />
+						the biggest Runet service
 					</Text>
 					{"    "}
 				</StackItem>
@@ -1522,12 +1439,11 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						молодых
+						young
 						<br />
-						и целеустремленных
+						and goal-oriented{" "}
 						<br />
-						сотрудников
-						<br />
+						employees
 					</Text>
 					{"    "}
 				</StackItem>
@@ -1566,12 +1482,11 @@ export default (() => {
 						text-align="center"
 						color="#263238"
 					>
-						комфортных офисов
+						comfortable offices
 						<br />
-						в 4-х городах
+						in 4 cities
 						<br />
-						России и Украины
-						<br />
+						of Russia and Ukraine
 					</Text>
 					{"    "}
 				</StackItem>
@@ -1591,13 +1506,13 @@ export default (() => {
 						margin="40px 0px 0px 0px"
 						hover-background="#437de0"
 					>
-						Как попасть в команду
+						Learn More →
 					</Link>
 					{"    "}
 				</StackItem>
 			</Stack>
 		</Section>
-		<Components.Footer />
+		<Components.FooterEn />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
