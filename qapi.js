@@ -27,7 +27,7 @@ export default {
 				"description": "Job at uCoz. Job opportunities currently available at uCoz. Office and remote work. Learn how to join us and what it's like working in uTeam."
 			},
 			"styles": {
-				"overflow-y": "hidden"
+				"overflow-x": "hidden"
 			}
 		},
 		"602a760f8db767001e878978": {
