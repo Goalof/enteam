@@ -317,7 +317,7 @@ export default (() => {
 						<Components.TabPanels margin="5px 0px 0px 0px">
 							<Components.TabPanel tabId="one">
 								<Stack margin="40px 0px 0px 0px">
-									<StackItem width="40%" display="flex" lg-width="50%" sm-width="100%">
+									<StackItem width="40%" display="flex" lg-width="100%" sm-width="100%">
 										<Override
 											slot="StackItemContent"
 											align-items="flex-start"
@@ -564,7 +564,7 @@ export default (() => {
 							</Components.TabPanel>
 							<Components.TabPanel tabId="two">
 								<Stack margin="40px 0px 0px 0px">
-									<StackItem width="40%" display="flex" lg-width="50%" sm-width="100%">
+									<StackItem width="40%" display="flex" lg-width="100%" sm-width="100%">
 										<Override
 											slot="StackItemContent"
 											align-items="flex-start"
@@ -779,7 +779,7 @@ export default (() => {
 							</Components.TabPanel>
 							<Components.TabPanel tabId="three">
 								<Stack margin="40px 0px 0px 0px">
-									<StackItem width="40%" display="flex" lg-width="50%" sm-width="100%">
+									<StackItem width="40%" display="flex" lg-width="100%" sm-width="100%">
 										<Override
 											slot="StackItemContent"
 											align-items="flex-start"
@@ -1120,7 +1120,7 @@ employees{"\n\n"}
 							</Components.TabPanel>
 							<Components.TabPanel tabId="four">
 								<Stack margin="40px 0px 0px 0px">
-									<StackItem width="40%" display="flex" lg-width="50%" sm-width="100%">
+									<StackItem width="40%" display="flex" lg-width="100%" sm-width="100%">
 										<Override
 											slot="StackItemContent"
 											align-items="flex-start"
@@ -1722,7 +1722,7 @@ employees{"\n\n"}
 						sm-justify-content="center"
 					/>
 					<Link
-						href="https://vk.com/ucoz"
+						href="https://www.facebook.com/ucoz.web.builder/"
 						display="flex"
 						align-items="center"
 						flex-direction="column"
@@ -1739,7 +1739,7 @@ employees{"\n\n"}
 						<Image width="100px" height="100px" src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/ucoz.png?v=2021-02-01T22:05:06.991Z" margin="18px 0px 0px 0px" />
 					</Link>
 					<Link
-						href="https://vk.com/ucoz"
+						href="https://www.facebook.com/ukitcom.en/"
 						display="flex"
 						align-items="center"
 						flex-direction="column"
@@ -2024,7 +2024,7 @@ employees{"\n\n"}
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"602c67f4d524b3b42d4be948"}>
-				{"* {\n  scroll-behavior: smooth;\n  }\n.nobutton {\npointer-events: none; \n}\n  .active .fileText {\n  display: none;\n  }\n  input.fileText {\n      opacity: 1 !important;\n  }\n  * {\n    -webkit-tap-highlight-color: transparent!important;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrRegular';\n    src: url('/fonts/AvenirNextCyr-Regular.eot');\n    src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrMedium';\n    src: url('/fonts/AvenirNextCyr-Medium.eot');\n    src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrBold';\n    src: url('/fonts/AvenirNextCyr-Bold.eot');\n    src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrDemi';\n    src: url('/fonts/AvenirNextCyr-Demi.otf');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  body {\n    font-family: 'AvenirNextCyrRegular', sans-serif;\n    font-weight: normal;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }"}
+				{"* {\n  scroll-behavior: smooth;\n  }\n.nobutton {\npointer-events: none; \n}\n  .active .fileText {\n  display: none;\n  }\n  input.fileText {\n      opacity: 1 !important;\n  }\n  * {\n    -webkit-tap-highlight-color: transparent!important;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrRegular';\n    src: url('/fonts/AvenirNextCyr-Regular.eot');\n    src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrMedium';\n    src: url('/fonts/AvenirNextCyr-Medium.eot');\n    src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrBold';\n    src: url('/fonts/AvenirNextCyr-Bold.eot');\n    src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrDemi';\n    src: url('/fonts/AvenirNextCyr-Demi.otf');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  body {\n    font-family: 'AvenirNextCyrRegular', sans-serif;\n    font-weight: normal;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n:focus {\n    outline: none;\n}"}
 			</style>
 		</RawHtml>
 	</Theme>;

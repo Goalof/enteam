@@ -117,7 +117,7 @@ export default (() => {
 					<Components.MobileSide2
 						flex="1 0 auto"
 						nout-position="relative"
-						nout-z-index="5"
+						nout-z-index="3"
 						nout-display="flex"
 						nout-justify-content="flex-end"
 						nout-align-items="center"
@@ -146,6 +146,7 @@ export default (() => {
 							nout-z-index="6"
 							nout-top="35px"
 							sm-margin="-3px 0px 0px 0px"
+							nout-cursor="pointer"
 						/>
 						<Override
 							slot="Button Liner"
@@ -154,7 +155,7 @@ export default (() => {
 							nout-position="absolute"
 							min-height={0}
 							min-width={0}
-							nout-background="#000000"
+							nout-background="#ffffff"
 						/>
 						<Override
 							slot="Button Liner1"
@@ -165,12 +166,18 @@ export default (() => {
 						/>
 						<Override slot="Button Liner2" nout-top="11px" nout-border-radius="6px" nout-right="0px" />
 						<Override slot="Button Liner3" nout-top="18px" nout-border-radius="6px" nout-right="0px" />
-						<Override slot="Button Liner1 :closed" nout-width="22px" nout-background="#000000" />
-						<Override slot="Button Liner2 :closed" nout-width="22px" nout-background="#000000" />
-						<Override slot="Button Liner3 :closed" nout-width="22px" nout-background="#000000" />
+						<Override slot="Button Liner1 :closed" nout-width="22px" nout-background="#ffffff" />
+						<Override slot="Button Liner2 :closed" nout-width="22px" nout-background="#ffffff" />
+						<Override slot="Button Liner3 :closed" nout-width="22px" nout-background="#ffffff" />
 						<Override slot="Button Liner2 :open" nout-opacity="0" nout-width="32px" />
 						<Override slot="Button Liner1 :open" nout-width="36px" nout-transform="translateY(12px) rotate(225deg)" nout-background="--color-dark" />
-						<Override slot="Button Liner3 :open" nout-width="36px" nout-transform="translateY(-12px) rotate(135deg)" background="--color-green" />
+						<Override
+							slot="Button Liner3 :open"
+							nout-width="36px"
+							nout-transform="translateY(-12px) rotate(135deg)"
+							background="--color-green"
+							nout-background="#000000"
+						/>
 						<Override slot="Content2 :closed" nout-opacity="0" nout-transition="transform --transitionDuration-normal step-end 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-transform="translateY(-100%)" />
 						<Override slot="Content2 :open" nout-transform="translateY(0%)" nout-transition="transform --transitionDuration-normal step-start 0s,opacity --transitionDuration-normal --transitionTimingFunction-easeOut" nout-opacity="1" />
 						<Override slot="Button2 :open" nout-position="fixed" />
@@ -223,7 +230,7 @@ export default (() => {
 								nout-color="#263238"
 							/>
 							<Override slot="item" nout-padding="15px 25px 15px 25px" />
-							<Override slot="link-index">
+							<Override slot="link-index" nout-color="#FFE02D" nout-cursor="default">
 								Home
 							</Override>
 							<Override slot="link-vacancies">
@@ -476,12 +483,12 @@ export default (() => {
 					<Box
 						padding="0 14% 0 14%"
 						margin="40px 0px 0px 0px"
-						nout-width="65%"
+						nout-width="55%"
 						nout-display="flex"
 						nout-flex-direction="column"
-						nout-align-items="flex-end"
-						nout-justify-content="center"
-						nout-padding="0 0% 0 0%"
+						nout-align-items="flex-start"
+						nout-justify-content="flex-start"
+						nout-padding="0 5% 0 5%"
 						nout-margin="40px 0px 20px 0px"
 					>
 						<Text
@@ -725,7 +732,7 @@ export default (() => {
 					<Components.MobileSide
 						flex="1 0 auto"
 						nout-position="relative"
-						nout-z-index="5"
+						nout-z-index="4"
 						nout-display="flex"
 						nout-justify-content="flex-end"
 						nout-align-items="center"
@@ -754,6 +761,7 @@ export default (() => {
 							nout-z-index="6"
 							nout-top="35px"
 							sm-margin="-3px 0px 0px 0px"
+							nout-cursor="pointer"
 						/>
 						<Override
 							slot="Button Line"
@@ -829,7 +837,7 @@ export default (() => {
 								nout-color="#263238"
 							/>
 							<Override slot="item" nout-padding="15px 25px 15px 25px" />
-							<Override slot="link-index">
+							<Override slot="link-index" nout-color="#FFE02D" nout-cursor="default">
 								Home
 							</Override>
 							<Override slot="link-vacancies">
@@ -1542,7 +1550,7 @@ export default (() => {
 		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"602c67f4d524b3b42d4be948"}>
-				{"* {\n  scroll-behavior: smooth;\n  }\n.nobutton {\npointer-events: none; \n}\n  .active .fileText {\n  display: none;\n  }\n  input.fileText {\n      opacity: 1 !important;\n  }\n  * {\n    -webkit-tap-highlight-color: transparent!important;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrRegular';\n    src: url('/fonts/AvenirNextCyr-Regular.eot');\n    src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrMedium';\n    src: url('/fonts/AvenirNextCyr-Medium.eot');\n    src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrBold';\n    src: url('/fonts/AvenirNextCyr-Bold.eot');\n    src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrDemi';\n    src: url('/fonts/AvenirNextCyr-Demi.otf');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  body {\n    font-family: 'AvenirNextCyrRegular', sans-serif;\n    font-weight: normal;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }"}
+				{"* {\n  scroll-behavior: smooth;\n  }\n.nobutton {\npointer-events: none; \n}\n  .active .fileText {\n  display: none;\n  }\n  input.fileText {\n      opacity: 1 !important;\n  }\n  * {\n    -webkit-tap-highlight-color: transparent!important;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrRegular';\n    src: url('/fonts/AvenirNextCyr-Regular.eot');\n    src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrMedium';\n    src: url('/fonts/AvenirNextCyr-Medium.eot');\n    src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrBold';\n    src: url('/fonts/AvenirNextCyr-Bold.eot');\n    src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrDemi';\n    src: url('/fonts/AvenirNextCyr-Demi.otf');\n    font-weight: normal;\n    font-style: normal;\n    font-display: swap;\n  }\n  body {\n    font-family: 'AvenirNextCyrRegular', sans-serif;\n    font-weight: normal;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n:focus {\n    outline: none;\n}"}
 			</style>
 		</RawHtml>
 	</Theme>;
