@@ -584,8 +584,7 @@ export default (() => {
 											letter-spacing="0.3px"
 											color="#3D72CC"
 										>
-											15 
-employees{"\n\n"}
+											17 employees{"\n\n"}
 										</Text>
 										<Text
 											font="normal 400 18px/26px 'AvenirNextCyrMedium', sans-serif"
@@ -758,7 +757,7 @@ employees{"\n\n"}
 											justify-content="center"
 										>
 											<Text font="500 36px 'AvenirNextCyrBold', sans-serif" color="#ffffff">
-												+12
+												+14
 											</Text>
 										</Box>
 										<Text
