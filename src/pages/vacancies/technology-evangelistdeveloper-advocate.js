@@ -83,9 +83,7 @@ export default (() => {
 						letter-spacing="0.3px"
 						color="#333"
 					>
-						We are looking for an energetic, diligent and attentive professional to join our technical support team.
-						<br />
-						{"\n\n"}
+						We're looking for a person whose mission will be to promote our Quarkly project targeted at professional users (web designers and front-end developers) in the English-speaking market.
 					</Text>
 					<Text
 						font="normal 400 20px/1.2 'AvenirNextCyrMedium', sans-serif"
@@ -96,16 +94,21 @@ export default (() => {
 						color="#333"
 						letter-spacing=".2"
 					>
-						Duties:
+						Tasks:
 					</Text>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							dealing with technical support tickets submitted by our users;
+							Represent and promote the Quarkly project in the  -professional environment
 						</Text>
 					</List>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							fixing issues our customers may face when using our web services.
+							Establish interaction with professional communities and thought leaders
+						</Text>
+					</List>
+					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
+							Organize our participation in events, give speeches at events (conferences, meetups, etc.)
 						</Text>
 					</List>
 					<Text
@@ -121,22 +124,22 @@ export default (() => {
 					</Text>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							basic knowledge of HTML, CSS;
+							Fluent English
 						</Text>
 					</List>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							excellent writing skills;
+							Be able to easily build and maintain business relationships with journalists and bloggers
 						</Text>
 					</List>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							knowledge of uCoz, uKit or uWeb systems will be a great advantage;
+							Knowledge and understanding of the web industry (be on the same page with the audience and product developers)
 						</Text>
 					</List>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
 						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
-							activity on the uCoz community forum (+3 to karma).
+							Business contacts in the sphere of digital/IT will be a significant plus
 						</Text>
 					</List>
 					<Text
@@ -148,7 +151,7 @@ export default (() => {
 						color="#333"
 						letter-spacing=".2"
 					>
-						We offer:
+						Conditions:
 					</Text>
 					<Box
 						display="flex"
@@ -166,7 +169,7 @@ export default (() => {
 							lg-margin="12px 10px 0px 0px"
 						/>
 						<Text margin="6px 0px 6px 0px" font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif">
-							work on the young and friendly team of professionals;
+							Remote work
 						</Text>
 					</Box>
 					<Box
@@ -185,26 +188,7 @@ export default (() => {
 							lg-margin="12px 10px 0px 0px"
 						/>
 						<Text margin="6px 0px 6px 0px" font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif">
-							officially declared salary, determined by the results of the interview;
-						</Text>
-					</Box>
-					<Box
-						display="flex"
-						align-items="center"
-						margin="0px 0px 6px 0px"
-						lg-align-items="flex-start"
-						lg-padding="0px 0px 0px 0px"
-					>
-						<Image
-							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/tick.svg?v=2021-02-04T00:08:19.533Z"
-							width="15px"
-							height="12px"
-							padding="0px 0px 0px 0px"
-							margin="0px 10px 0px 0px"
-							lg-margin="12px 10px 0px 0px"
-						/>
-						<Text margin="6px 0px 6px 0px" font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif">
-							all opportunities for professional growth and development (conferences, trainings);
+							Part-time employment
 						</Text>
 					</Box>
 					<Components.PopUp
