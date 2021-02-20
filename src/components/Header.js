@@ -721,7 +721,7 @@ const overrides = {
 		"kind": "Override",
 		"props": {
 			"slot": "link-resume",
-			"children": "Joun Us"
+			"children": "Join Us"
 		}
 	},
 	"menuOverride19": {
