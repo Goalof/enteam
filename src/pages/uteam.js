@@ -283,6 +283,7 @@ export default (() => {
 								border-color="#263238"
 								transition="all 0.2s linear 0s"
 								border-radius="0px 5px 5px 0px"
+								display="none"
 							>
 								<Override
 									slot="Selected Tab"
