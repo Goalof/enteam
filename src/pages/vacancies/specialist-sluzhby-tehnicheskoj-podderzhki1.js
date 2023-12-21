@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Icon, Text, List, Image, Box } from "@quarkly/widgets";
+import { Theme, Icon, Link, Text, List, Image, Box, Section } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml, Override, Section, StackItem, Stack } from "@quarkly/components";
+import { RawHtml, Override, StackItem, Stack } from "@quarkly/components";
 import * as Components from "components";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 export default (() => {
@@ -33,45 +33,45 @@ export default (() => {
 					<Override slot="StackItemContent" align-items="flex-start" justify-content="flex-start" flex-direction="column" />
 					{"        "}
 					<Link
+						hover-color="#3d72cc"
+						display="flex"
 						className="noprint"
 						href="/vacancies"
 						margin="0px 0px 20px 0px"
-						text-decoration-line="initial"
 						color="#4a8cfa"
 						font="14px 'AvenirNextCyrMedium', sans-serif"
+						text-decoration-line="initial"
 						transition="color 0.2s linear 0s"
-						hover-color="#3d72cc"
-						display="flex"
 					>
 						<Icon
+							margin="-1px 2px 0px -2px"
+							hover-color="inherit"
 							category="md"
 							icon={MdKeyboardArrowLeft}
 							color="inherit"
 							size="20px"
-							margin="-1px 2px 0px -2px"
-							hover-color="inherit"
 						/>
 						К списку вакансий
 					</Link>
 					<Text
+						text-align="left"
+						color="#263238"
+						sm-font="normal 500 40px/1.2 'AvenirNextCyrDemi', sans-serif"
 						font="normal 500 44px/1.2 'AvenirNextCyrDemi', sans-serif"
 						margin="0px 0px 25px -3px"
 						display="inline-block"
 						sm-margin="0px 0px 20px 0px"
-						text-align="left"
-						color="#263238"
-						sm-font="normal 500 40px/1.2 'AvenirNextCyrDemi', sans-serif"
 					>
 						Специалист службы технической поддержки
 					</Text>
 					<Text
-						font="normal 400 18px/1.2 'AvenirNextCyrMedium', sans-serif"
-						margin="0px 0px 20px 0px"
 						display="inline-block"
 						sm-margin="0px 0px 10px 0px"
 						text-align="center"
 						color="#333"
 						letter-spacing=".2"
+						font="normal 400 18px/1.2 'AvenirNextCyrMedium', sans-serif"
+						margin="0px 0px 20px 0px"
 					>
 						Проект uCoz | Удаленная работа
 					</Text>
@@ -86,13 +86,13 @@ export default (() => {
 						Требуется специалист тех.поддержки: внимательный, грамотный, заинтересованный и просто хороший человек.
 					</Text>
 					<Text
-						font="normal 400 20px/1.2 'AvenirNextCyrMedium', sans-serif"
-						margin="24px 0px 18px 0px"
-						display="inline-block"
 						sm-margin="10px 0px 20px 0px"
 						text-align="left"
 						color="#333"
 						letter-spacing=".2"
+						font="normal 400 20px/1.2 'AvenirNextCyrMedium', sans-serif"
+						margin="24px 0px 18px 0px"
+						display="inline-block"
 					>
 						Задачи:
 					</Text>
@@ -123,7 +123,7 @@ export default (() => {
 							Часовой пояс: GMT+8 - GMT+11.
 						</Text>
 					</List>
-					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
+					<List padding="0px 0px 0px 20px" margin="0px 0px 0px 0px">
 						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
 							Знания HTML, CSS.
 						</Text>
@@ -134,12 +134,12 @@ export default (() => {
 						</Text>
 					</List>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
-						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
+						<Text margin="0px 0px 12px 5px" font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif">
 							Чёткое понимание работы веба.
 						</Text>
 					</List>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px">
-						<Text font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif" margin="0px 0px 12px 5px">
+						<Text margin="0px 0px 12px 5px" font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif">
 							Грамотный письменный русский язык.
 						</Text>
 					</List>
@@ -155,23 +155,23 @@ export default (() => {
 					</List>
 					<List margin="0px 0px 0px 0px" padding="0px 0px 0px 20px" />
 					<Text
-						font="normal 400 20px/1.2 'AvenirNextCyrMedium', sans-serif"
-						margin="20px 0px 12px 0px"
 						display="inline-block"
 						sm-margin="10px 0px 20px 0px"
 						text-align="left"
 						color="#333"
 						letter-spacing=".2"
+						font="normal 400 20px/1.2 'AvenirNextCyrMedium', sans-serif"
+						margin="20px 0px 12px 0px"
 					>
 						Условия:
 						<br />
 					</Text>
 					<Box
-						display="flex"
 						align-items="center"
 						margin="0px 0px 6px 0px"
 						lg-margin="0px 0px 6px 0px"
 						lg-align-items="flex-start"
+						display="flex"
 					>
 						<Image
 							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/tick.svg?v=2021-02-04T00:08:19.533Z"
@@ -193,12 +193,12 @@ export default (() => {
 						lg-padding="0px 0px 0px 0px"
 					>
 						<Image
+							lg-margin="12px 10px 0px 0px"
 							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/tick.svg?v=2021-02-04T00:08:19.533Z"
 							width="15px"
 							height="12px"
 							padding="0px 0px 0px 0px"
 							margin="0px 10px 0px 0px"
-							lg-margin="12px 10px 0px 0px"
 						/>
 						<Text margin="3px 0px 3px 0px" font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif">
 							График обсуждается на собеседовании, возможны варианты
@@ -231,12 +231,12 @@ export default (() => {
 						lg-padding="0px 0px 0px 0px"
 					>
 						<Image
-							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/tick.svg?v=2021-02-04T00:08:19.533Z"
 							width="15px"
 							height="12px"
 							padding="0px 0px 0px 0px"
 							margin="0px 10px 0px 0px"
 							lg-margin="12px 10px 0px 0px"
+							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/tick.svg?v=2021-02-04T00:08:19.533Z"
 						/>
 						<Text margin="3px 0px 3px 0px" font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif">
 							Первый этап — тестовое задание
@@ -245,44 +245,12 @@ export default (() => {
 						</Text>
 					</Box>
 					<Components.PopUp
+						top="40%"
+						transition="all 0.5s ease 0s"
 						left="-30px"
 						bottom="auto"
 						right="auto"
-						top="40%"
-						transition="all 0.5s ease 0s"
 					>
-						<Override
-							slot="button"
-							className="noprint"
-							color="#263238"
-							font="normal 500 16px/50px 'AvenirNextCyrMedium', sans-serif"
-							letter-spacing=".1px"
-							background="#ffd83a"
-							padding="0px 15px 0px 15px"
-							transition="all 0.2s linear 0s"
-							left="-30px"
-							bottom="auto"
-							right="auto"
-							top="40%"
-							hover-left="0px"
-							border-radius="5px"
-							margin="30px 0px 10px 0px"
-							hover-background="#e6c235"
-						>
-							Откликнуться на вакансию
-						</Override>
-						<Override
-							slot="wrapper"
-							background="#ffffff"
-							max-width="672px"
-							width="100%"
-							margin="0px 0px 0px 0px"
-							padding="0px 0px 0px 0px"
-							border-radius="0px"
-							height="100%"
-							overflow-y="scroll"
-							max-height="1150px"
-						/>
 						<Override
 							slot="close"
 							color="#c5cfdb"
@@ -291,8 +259,40 @@ export default (() => {
 							hover-color="#333"
 							transition="color 0.3s ease 0s"
 						/>
+						<Override
+							slot="button"
+							border-radius="5px"
+							hover-background="#e6c235"
+							color="#263238"
+							font="normal 500 16px/50px 'AvenirNextCyrMedium', sans-serif"
+							background="#ffd83a"
+							transition="all 0.2s linear 0s"
+							left="-30px"
+							letter-spacing=".1px"
+							right="auto"
+							bottom="auto"
+							hover-left="0px"
+							className="noprint"
+							padding="0px 15px 0px 15px"
+							top="40%"
+							margin="30px 0px 10px 0px"
+						>
+							Откликнуться на вакансию
+						</Override>
+						<Override
+							slot="wrapper"
+							background="#ffffff"
+							max-width="672px"
+							overflow-y="scroll"
+							max-height="1150px"
+							width="100%"
+							margin="0px 0px 0px 0px"
+							padding="0px 0px 0px 0px"
+							border-radius="0px"
+							height="100%"
+						/>
 						<Section padding="0px 0 40px 0">
-							<Override slot="SectionContent" align-items="center" width="100%" />
+							<Override slot="SectionContent" width="100%" align-items="center" />
 							<Components.EmbedHTML width="100%" />
 							<Components.EmbedJS />
 						</Section>
@@ -304,31 +304,9 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Components.Footer />
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"602c67f4d524b3b42d4be948"}>
-				{"* {\n  scroll-behavior: smooth;\n  }\n.nobutton {\npointer-events: none; \n}\n  .active .fileText {\n  display: none;\n  }\n  input.fileText {\n      opacity: 1 !important;\n  }\n  * {\n    -webkit-tap-highlight-color: transparent!important;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrRegular';\n    src: url('/fonts/AvenirNextCyr-Regular.eot');\n    src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrMedium';\n    src: url('/fonts/AvenirNextCyr-Medium.eot');\n    src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrBold';\n    src: url('/fonts/AvenirNextCyr-Bold.eot');\n    src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrDemi';\n    src: url('/fonts/AvenirNextCyr-Demi.otf');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  body {\n    font-family: 'AvenirNextCyrRegular', sans-serif;\n    font-weight: normal;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n:focus {\n    outline: none;\n}"}
+				{"@media (min-width: 1200px) {\n* {\n    scroll-behavior: smooth;\n    }\n    }\n.nobutton {\npointer-events: none; \n}\n  .active .fileText {\n  display: none;\n  }\n  input.fileText {\n      opacity: 1 !important;\n  }\n  * {\n    -webkit-tap-highlight-color: transparent!important;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrRegular';\n    src: url('/fonts/AvenirNextCyr-Regular.eot');\n    src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrMedium';\n    src: url('/fonts/AvenirNextCyr-Medium.eot');\n    src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrBold';\n    src: url('/fonts/AvenirNextCyr-Bold.eot');\n    src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrDemi';\n    src: url('/fonts/AvenirNextCyr-Demi.otf');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  body {\n    font-family: 'AvenirNextCyrRegular', sans-serif;\n    font-weight: normal;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n:focus {\n    outline: none;\n}"}
 			</style>
 		</RawHtml>
 	</Theme>;

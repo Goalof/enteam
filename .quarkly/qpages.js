@@ -1,0 +1,23 @@
+module.exports = [
+	"/index/",
+	"/vacancies/",
+	"/vacancies/technology-evangelistdeveloper-advocate/",
+	"/vacancies/pr-menedzher/",
+	"/vacancies/back-end-razrabotchik-php/",
+	"/vacancies/specialist-po-seo-optimizacii-sajtov/",
+	"/vacancies/sborka-sajtov-na-konstruktore-sajtov-ukit/",
+	"/vacancies/sborshik-sajtov-na-konstruktorah-ucozuweb/",
+	"/vacancies/junior-nodejs-razrabotchik/",
+	"/vacancies/menedzher-dizajner-shablonov/",
+	"/vacancies/specialist-sluzhby-tehnicheskoj-podderzhki/",
+	"/vacancies/senior-nodejs-engineer/",
+	"/vacancies/programmist-perl/",
+	"/vacancies/specialist-sluzhby-tehnicheskoj-podderzhki1/",
+	"/vacancies/pr-menedzher1/",
+	"/uteam/",
+	"/resume/",
+	"/contacts/",
+	"/404/",
+	"/",
+	"/404.html"
+]

@@ -8,9 +8,7 @@ const pageStyles = {
         "overflow-x": "hidden"
     },
     "vacancies": {},
-    "uteam": {},
-    "resume": {},
-    "contacts": {},
+    "vacancies/technology-evangelistdeveloper-advocate": {},
     "vacancies/pr-menedzher": {},
     "vacancies/back-end-razrabotchik-php": {},
     "vacancies/specialist-po-seo-optimizacii-sajtov": {},
@@ -23,7 +21,9 @@ const pageStyles = {
     "vacancies/programmist-perl": {},
     "vacancies/specialist-sluzhby-tehnicheskoj-podderzhki1": {},
     "vacancies/pr-menedzher1": {},
-    "vacancies/technology-evangelistdeveloper-advocate": {}
+    "uteam": {},
+    "resume": {},
+    "contacts": {}
 };
 
 const PageStyles = createGlobalStyle`

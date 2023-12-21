@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Image } from "@quarkly/widgets";
+import { Theme, Text, Section, Box, Link, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml, Override, StackItem, Stack, Section, GoogleMap } from "@quarkly/components";
+import { RawHtml, Override, StackItem, Stack, GoogleMap } from "@quarkly/components";
 import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
@@ -24,7 +24,7 @@ export default (() => {
 			<meta name={"msapplication-TileColor"} content={"#5291FA"} />
 		</Helmet>
 		<Components.Header />
-		<Section padding="150px 0 80px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/1.jpg?v=2021-01-28T13:22:17.962Z) 0% 0% /cover repeat scroll padding-box">
+		<Section background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/1.jpg?v=2021-01-28T13:22:17.962Z) 0% 0% /cover repeat scroll padding-box" padding="150px 0 80px 0">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="850px">
 				{"    "}
@@ -32,13 +32,13 @@ export default (() => {
 					<Override slot="StackItemContent" align-items="center" justify-content="center" />
 					{"        "}
 					<Text
-						font="normal 900 64px/1.2 'AvenirNextCyrDemi', sans-serif"
-						margin="0px 0px 5px 0px"
-						display="inline-block"
 						sm-text-align="center"
 						sm-margin="0px 0px 30px 0px"
 						text-align="center"
 						color="#ffffff"
+						font="normal 900 64px/1.2 'AvenirNextCyrDemi', sans-serif"
+						margin="0px 0px 5px 0px"
+						display="inline-block"
 					>
 						Contact
 					</Text>
@@ -47,31 +47,31 @@ export default (() => {
 				{"    "}
 			</Stack>
 		</Section>
-		<Section padding="30px 0 40px 0" sm-padding="40px 0 40px 0" lg-padding="40px 0 40px 0" md-padding="40px 0 40px 0">
+		<Section md-padding="40px 0 40px 0" padding="30px 0 40px 0" sm-padding="40px 0 40px 0" lg-padding="40px 0 40px 0">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="1170px" width="100%">
 				{"    "}
-				<StackItem width="100%" display="flex">
-					<Override slot="StackItemContent" flex-direction="column" align-items="flex-start" />
+				<StackItem display="flex" width="100%">
+					<Override slot="StackItemContent" align-items="flex-start" flex-direction="column" />
 					{"        "}
 					<Text
-						font="normal 400 36px/36px 'AvenirNextCyrRegular', sans-serif"
 						margin="0px 0px 0px 0px"
 						display="inline-block"
 						sm-text-align="center"
 						sm-margin="0px 0px 30px 0px"
 						text-align="center"
 						color="#263238"
+						font="normal 400 36px/36px 'AvenirNextCyrRegular', sans-serif"
 					>
 						We look forward to meeting you!{"\n\n"}
 					</Text>
 					<Text
-						font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
-						margin="18px 0px 0px 0px"
 						display="inline-block"
 						sm-text-align="center"
 						sm-margin="0px 0px 30px 0px"
 						color="#333"
+						font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
+						margin="18px 0px 0px 0px"
 					>
 						Please schedule an appointment before coming.
 						<br />
@@ -88,66 +88,66 @@ export default (() => {
 					<GoogleMap query="ул. Барклая 6, строение 5, БЦ" margin="0px 0px 0px 0px" z-index="0" sm-margin="15px 0px 20px 0px" />
 					<Box display="flex" margin="0px 0px 25px 0px" sm-flex-direction="column">
 						<Box
-							display="flex"
 							flex-direction="column"
 							align-items="flex-start"
 							max-width="270px"
 							width="100%"
+							display="flex"
 						>
 							<Text
-								font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-								margin="20px 0px 17px 0px"
-								display="inline-block"
 								sm-margin="0px 0px 30px 0px"
 								text-align="center"
 								color="#333"
+								font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+								margin="20px 0px 17px 0px"
+								display="inline-block"
 							>
 								Visit us
 							</Text>
 							<Text
-								font="normal 400 18px/22px 'AvenirNextCyrMedium'"
 								display="inline-block"
 								sm-margin="0px 0px 30px 0px"
 								color="#333"
 								margin="0px 0px 0px 0px"
+								font="normal 400 18px/22px 'AvenirNextCyrMedium'"
 							>
 								BC Barklay Plaza, 6 Barklaya St., Bldg. 5, Moscow{"\n\n"}
 							</Text>
 						</Box>
-						<Box display="flex" flex-direction="column" align-items="flex-start" max-width="300px">
+						<Box align-items="flex-start" max-width="300px" display="flex" flex-direction="column">
 							<Text
-								font="normal 400 18px/22px 'AvenirNextCyrMedium'"
-								display="inline-block"
-								sm-text-align="center"
 								sm-margin="0px 0px 30px 0px"
 								text-align="center"
 								color="#333"
 								margin="20px 0px 17px 0px"
+								font="normal 400 18px/22px 'AvenirNextCyrMedium'"
+								display="inline-block"
+								sm-text-align="center"
 							>
 								Email us
 							</Text>
 							<Link
-								href="malito:job@ucoz.ru"
-								text-decoration-line="initial"
 								color="#4a8cfa"
 								font="normal 400 18px/24px 'AvenirNextCyrMedium'"
 								transition="color 0.2s linear 0s"
 								hover-color="#3d72cc"
+								href="malito:job@ucoz.ru"
+								text-decoration-line="initial"
 							>
 								job@ucoz.ru
 							</Link>
 						</Box>
 					</Box>
 					<Link
-						href="/vacancies"
 						background="#ffd83a"
 						text-decoration-line="initial"
+						padding="0px 15px 02px 15px"
+						hover-background="#e6c235"
+						href="/vacancies"
 						color="#263238"
 						font="16px/50px 'AvenirNextCyrMedium', sans-serif"
-						padding="0px 15px 02px 15px"
 						margin="0px 0px 0px 0px"
 						transition="all 0.2s linear 0s"
-						hover-background="#e6c235"
 						border-radius="5px"
 					>
 						View All Jobs
@@ -156,83 +156,83 @@ export default (() => {
 				</StackItem>
 				{"    "}
 			</Stack>
-			<Stack margin="30px 0px 0px 0px" max-width="1170px" width="100%">
+			<Stack width="100%" margin="30px 0px 0px 0px" max-width="1170px">
 				{"    "}
 				<StackItem width="100%" display="flex">
 					<Override slot="StackItemContent" flex-direction="column" align-items="flex-start" />
 					{"        "}
 					<Text
+						color="#263238"
 						font="normal 400 36px/36px 'AvenirNextCyrRegular', sans-serif"
 						margin="0px 0px 0px 0px"
 						display="inline-block"
 						sm-text-align="center"
 						sm-margin="0px 0px 30px 0px"
 						text-align="center"
-						color="#263238"
 					>
 						Documents
 					</Text>
 					<Text
-						font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
-						margin="18px 0px 25px 0px"
 						display="inline-block"
 						sm-margin="0px 0px 30px 0px"
 						text-align="left"
 						color="#333"
 						sm-font="normal 400 16px/28px 'AvenirNextCyrRegular', sans-serif"
+						font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
+						margin="18px 0px 25px 0px"
 					>
 						Pursuant to article 15, paragraph 6 of the Federal Law No. 426-FZ "On Special Assessment of Working Conditions" of December 28, 2013, we are publishing the results of the special assessment of working conditions in our offices
 					</Text>
 					<Link
+						lg-margin="0px 0px 16px 0px"
 						href="/documents/Exp_opinion_2018.pdf"
 						display="flex"
-						text-decoration-line="initial"
 						target="_blank"
-						transition="color 0.2s ease 0s"
 						hover-color="#5F99FB"
 						color="#333"
+						text-decoration-line="initial"
+						transition="color 0.2s ease 0s"
 						margin="0px 0px 12px 0px"
-						lg-margin="0px 0px 16px 0px"
 						sm-margin="0px 0px 0px 0px"
 					>
 						<Image
+							lg-margin="3px 12px 0px 0px"
 							width="24px"
 							height="24px"
 							margin="1px 12px 0px 0px"
 							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z"
-							lg-margin="3px 12px 0px 0px"
 						/>
 						<Text
+							lg-font="normal 400 20px/30px 'AvenirNextCyrRegular', sans-serif"
+							sm-font="normal 400 16px/30px 'AvenirNextCyrRegular', sans-serif"
 							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
 							margin="0px 0px 0px 0px"
 							display="inline-block"
 							sm-margin="0px 0px 30px 0px"
 							text-align="left"
 							color="inherit"
-							lg-font="normal 400 20px/30px 'AvenirNextCyrRegular', sans-serif"
-							sm-font="normal 400 16px/30px 'AvenirNextCyrRegular', sans-serif"
 						>
 							Expert opinion on the assessment results of working conditions in the Moscow office
 						</Text>
 					</Link>
 					<Link
-						href="/documents/list_of_measures_spb_2018.pdf"
 						display="flex"
-						text-decoration-line="initial"
 						target="_blank"
-						transition="color 0.2s ease 0s"
 						hover-color="#5F99FB"
 						color="#333"
 						margin="0px 0px 12px 0px"
+						href="/documents/list_of_measures_spb_2018.pdf"
+						text-decoration-line="initial"
+						transition="color 0.2s ease 0s"
 						lg-margin="0px 0px 16px 0px"
 						sm-margin="0px 0px 0px 0px"
 					>
 						<Image
-							width="24px"
 							height="24px"
 							margin="1px 12px 0px 0px"
 							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z"
 							lg-margin="3px 12px 0px 0px"
+							width="24px"
 						/>
 						<Text
 							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
@@ -248,16 +248,16 @@ export default (() => {
 						</Text>
 					</Link>
 					<Link
-						href="/documents/Summary_list_msk_2018.pdf"
-						display="flex"
-						text-decoration-line="initial"
 						target="_blank"
 						transition="color 0.2s ease 0s"
 						hover-color="#5F99FB"
 						color="#333"
+						sm-margin="0px 0px 0px 0px"
+						href="/documents/Summary_list_msk_2018.pdf"
+						display="flex"
+						text-decoration-line="initial"
 						margin="0px 0px 12px 0px"
 						lg-margin="0px 0px 16px 0px"
-						sm-margin="0px 0px 0px 0px"
 					>
 						<Image
 							width="24px"
@@ -267,100 +267,100 @@ export default (() => {
 							lg-margin="3px 12px 0px 0px"
 						/>
 						<Text
-							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
-							margin="0px 0px 0px 0px"
-							display="inline-block"
-							sm-margin="0px 0px 30px 0px"
 							text-align="left"
 							color="inherit"
 							lg-font="normal 400 20px/30px 'AvenirNextCyrRegular', sans-serif"
 							sm-font="normal 400 16px/30px 'AvenirNextCyrRegular', sans-serif"
+							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
+							margin="0px 0px 0px 0px"
+							display="inline-block"
+							sm-margin="0px 0px 30px 0px"
 						>
 							Summary list with the assessment results of working conditions in the Moscow office
 						</Text>
 					</Link>
 					<Link
-						href="http://ru.uteam.pro/resources/documents/Summary_list_spb_2018.pdf"
-						display="flex"
 						text-decoration-line="initial"
 						target="_blank"
-						transition="color 0.2s ease 0s"
 						hover-color="#5F99FB"
 						color="#333"
-						margin="0px 0px 12px 0px"
 						lg-margin="0px 0px 16px 0px"
 						sm-margin="0px 0px 0px 0px"
+						href="http://ru.uteam.pro/resources/documents/Summary_list_spb_2018.pdf"
+						display="flex"
+						transition="color 0.2s ease 0s"
+						margin="0px 0px 12px 0px"
 					>
 						<Image
-							width="24px"
-							height="24px"
 							margin="1px 12px 0px 0px"
 							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z"
 							lg-margin="3px 12px 0px 0px"
+							width="24px"
+							height="24px"
 						/>
 						<Text
-							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
-							margin="0px 0px 0px 0px"
 							display="inline-block"
 							sm-margin="0px 0px 30px 0px"
 							text-align="left"
 							color="inherit"
 							lg-font="normal 400 20px/30px 'AvenirNextCyrRegular', sans-serif"
 							sm-font="normal 400 16px/30px 'AvenirNextCyrRegular', sans-serif"
+							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
+							margin="0px 0px 0px 0px"
 						>
 							Summary list with the assessment results of working conditions in the St. Petersburg office
 						</Text>
 					</Link>
 					<Link
-						href="/documents/event_list_msk.pdf"
+						color="#333"
+						margin="0px 0px 12px 0px"
+						lg-margin="0px 0px 16px 0px"
 						display="flex"
 						text-decoration-line="initial"
 						target="_blank"
 						transition="color 0.2s ease 0s"
 						hover-color="#5F99FB"
-						color="#333"
-						margin="0px 0px 12px 0px"
-						lg-margin="0px 0px 16px 0px"
+						href="/documents/event_list_msk.pdf"
 						sm-margin="0px 0px 0px 0px"
 					>
 						<Image
+							lg-margin="3px 12px 0px 0px"
 							width="24px"
 							height="24px"
 							margin="1px 12px 0px 0px"
 							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z"
-							lg-margin="3px 12px 0px 0px"
 						/>
 						<Text
+							color="inherit"
+							lg-font="normal 400 20px/30px 'AvenirNextCyrRegular', sans-serif"
+							sm-font="normal 400 16px/30px 'AvenirNextCyrRegular', sans-serif"
 							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
 							margin="0px 0px 0px 0px"
 							display="inline-block"
 							sm-margin="0px 0px 30px 0px"
 							text-align="left"
-							color="inherit"
-							lg-font="normal 400 20px/30px 'AvenirNextCyrRegular', sans-serif"
-							sm-font="normal 400 16px/30px 'AvenirNextCyrRegular', sans-serif"
 						>
 							List of activities to improve working conditions in the Moscow office (2017)
 						</Text>
 					</Link>
 					<Link
+						text-decoration-line="initial"
+						sm-margin="0px 0px 0px 0px"
+						lg-margin="0px 0px 16px 0px"
 						href="/documents/event_list_spb.pdf"
 						display="flex"
-						text-decoration-line="initial"
 						target="_blank"
 						transition="color 0.2s ease 0s"
 						hover-color="#5F99FB"
 						color="#333"
 						margin="0px 0px 12px 0px"
-						lg-margin="0px 0px 16px 0px"
-						sm-margin="0px 0px 0px 0px"
 					>
 						<Image
-							width="24px"
 							height="24px"
 							margin="1px 12px 0px 0px"
 							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z"
 							lg-margin="3px 12px 0px 0px"
+							width="24px"
 						/>
 						<Text
 							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
@@ -377,25 +377,24 @@ export default (() => {
 					</Link>
 					<Link
 						href="/documents/results_msk.pdf"
+						transition="color 0.2s ease 0s"
+						lg-margin="0px 0px 16px 0px"
+						sm-margin="0px 0px 0px 0px"
 						display="flex"
 						text-decoration-line="initial"
 						target="_blank"
-						transition="color 0.2s ease 0s"
 						hover-color="#5F99FB"
 						color="#333"
 						margin="0px 0px 12px 0px"
-						lg-margin="0px 0px 16px 0px"
-						sm-margin="0px 0px 0px 0px"
 					>
 						<Image
+							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z"
+							lg-margin="3px 12px 0px 0px"
 							width="24px"
 							height="24px"
 							margin="1px 12px 0px 0px"
-							src="https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/document.svg?v=2021-01-28T21:23:13.010Z"
-							lg-margin="3px 12px 0px 0px"
 						/>
 						<Text
-							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
 							margin="0px 0px 0px 0px"
 							display="inline-block"
 							sm-margin="0px 0px 30px 0px"
@@ -403,19 +402,20 @@ export default (() => {
 							color="inherit"
 							lg-font="normal 400 20px/30px 'AvenirNextCyrRegular', sans-serif"
 							sm-font="normal 400 16px/30px 'AvenirNextCyrRegular', sans-serif"
+							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
 						>
 							Assessment record: Results of assessing working conditions in the Moscow office (2017)
 						</Text>
 					</Link>
 					<Link
-						href="/documents/results_spb.pdf"
-						display="flex"
 						text-decoration-line="initial"
 						target="_blank"
-						transition="color 0.2s ease 0s"
 						hover-color="#5F99FB"
 						color="#333"
 						margin="0px 0px 12px 0px"
+						href="/documents/results_spb.pdf"
+						display="flex"
+						transition="color 0.2s ease 0s"
 						lg-margin="0px 0px 16px 0px"
 						sm-margin="0px 0px 0px 0px"
 					>
@@ -427,14 +427,14 @@ export default (() => {
 							lg-margin="3px 12px 0px 0px"
 						/>
 						<Text
-							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
-							margin="0px 0px 0px 0px"
 							display="inline-block"
 							sm-margin="0px 0px 30px 0px"
 							text-align="left"
 							color="inherit"
 							lg-font="normal 400 20px/30px 'AvenirNextCyrRegular', sans-serif"
 							sm-font="normal 400 16px/30px 'AvenirNextCyrRegular', sans-serif"
+							font="normal 400 20px/28px 'AvenirNextCyrRegular', sans-serif"
+							margin="0px 0px 0px 0px"
 						>
 							Assessment record: Results of assessing working conditions in the Saint-Petersburg office (2017)
 						</Text>
@@ -445,31 +445,9 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Components.FooterEn />
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"602c67f4d524b3b42d4be948"}>
-				{"* {\n  scroll-behavior: smooth;\n  }\n.nobutton {\npointer-events: none; \n}\n  .active .fileText {\n  display: none;\n  }\n  input.fileText {\n      opacity: 1 !important;\n  }\n  * {\n    -webkit-tap-highlight-color: transparent!important;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrRegular';\n    src: url('/fonts/AvenirNextCyr-Regular.eot');\n    src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrMedium';\n    src: url('/fonts/AvenirNextCyr-Medium.eot');\n    src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrBold';\n    src: url('/fonts/AvenirNextCyr-Bold.eot');\n    src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrDemi';\n    src: url('/fonts/AvenirNextCyr-Demi.otf');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  body {\n    font-family: 'AvenirNextCyrRegular', sans-serif;\n    font-weight: normal;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n:focus {\n    outline: none;\n}"}
+				{"@media (min-width: 1200px) {\n* {\n    scroll-behavior: smooth;\n    }\n    }\n.nobutton {\npointer-events: none; \n}\n  .active .fileText {\n  display: none;\n  }\n  input.fileText {\n      opacity: 1 !important;\n  }\n  * {\n    -webkit-tap-highlight-color: transparent!important;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrRegular';\n    src: url('/fonts/AvenirNextCyr-Regular.eot');\n    src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrMedium';\n    src: url('/fonts/AvenirNextCyr-Medium.eot');\n    src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrBold';\n    src: url('/fonts/AvenirNextCyr-Bold.eot');\n    src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrDemi';\n    src: url('/fonts/AvenirNextCyr-Demi.otf');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  body {\n    font-family: 'AvenirNextCyrRegular', sans-serif;\n    font-weight: normal;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n:focus {\n    outline: none;\n}"}
 			</style>
 		</RawHtml>
 	</Theme>;

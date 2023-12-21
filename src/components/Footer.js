@@ -80,7 +80,6 @@ const overrides = {
 				target="_blank"
 				lg-padding="0px 0px 0px 0px"
 				lg-margin="0px 0px 0px 0px"
-				data-q-widget-type="PRIMITIVE"
 				overflow-wrap="normal"
 				word-break="normal"
 				white-space="normal"

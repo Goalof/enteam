@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Icon, Button, Box, Hr } from "@quarkly/widgets";
+import { Theme, Text, Section, Icon, Button, Link, Box, Hr } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml, Override, StackItem, Stack, Section } from "@quarkly/components";
+import { RawHtml, Override, StackItem, Stack } from "@quarkly/components";
 import * as Components from "components";
 import { FaBoxes, FaFileCode } from "react-icons/fa";
 import { MdTouchApp } from "react-icons/md";
@@ -29,7 +29,7 @@ export default (() => {
 		</Helmet>
 		{" "}
 		<Components.Header />
-		<Section padding="150px 0 150px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/vac_head.jpg?v=2021-01-28T20:18:22.116Z) 0% 0% /cover repeat scroll padding-box" md-padding="150px 0 80px 0" sm-padding="150px 0 80px 0">
+		<Section md-padding="150px 0 80px 0" sm-padding="150px 0 80px 0" padding="150px 0 150px 0" background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/vac_head.jpg?v=2021-01-28T20:18:22.116Z) 0% 0% /cover repeat scroll padding-box">
 			<Override slot="SectionContent" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" max-width="850px">
 				{"    "}
@@ -53,51 +53,57 @@ export default (() => {
 				{"    "}
 			</Stack>
 		</Section>
-		<Section padding="0px 0 40px 0" min-height="80vh" lg-min-height="auto">
+		<Section min-height="80vh" lg-min-height="auto" padding="0px 0 40px 0">
 			<Override slot="SectionContent" align-items="center" md-margin="0px 0px 0px 0px" md-width="100%" />
 			<Stack margin="0px 0px 0px 0px" max-width="1170px" width="100%">
 				<StackItem width="100%">
 					<Override slot="StackItemContent" md-width="100%" />
 					<Components.Tabs2 defaultTab="all" width="100%">
+						<Override
+							slot="Tab"
+							font="normal 400 14px/22px 'AvenirNextCyrMedium'"
+							margin="0px 2px 0px 0px"
+							md-width="100%"
+							background="#fff"
+							focus-box-shadow="none"
+							padding="10px 24px 10px 24px"
+							border-radius="0px"
+							md-background="#E4E9ED"
+							md-color="#333"
+							md-margin="0px 32px 0px 32px"
+							display="block"
+							color="#4a8cfa"
+						/>
+						<Override
+							slot="Tab :active"
+							md-border-radius="0px"
+							md-background="#ffe02d"
+							background="#ffe02d"
+							color="#263238"
+						>
+							All offers
+						</Override>
+						<Override slot="Tab 6021ccde9e849bcf1214b34e">
+							Remote work
+						</Override>
+						<Override slot="Tab fl" border-radius="0px 5px 5px 0px" md-border-radius="0px">
+							Remote work
+						</Override>
 						<Override slot="Tab all" border-radius="5px 0px 0px 5px" md-border-radius="0px">
 							All offers
 						</Override>
 						<Override
 							slot="Tab msk"
+							opacity=".7"
 							className="nobutton"
 							border-radius="0px"
 							pointer-events="none"
 							cursor="default"
-							opacity=".7"
 						>
 							Office work
 						</Override>
 						<Override slot="Tab spb" border-radius="0px" display="none">
 							Санкт-Петербург
-						</Override>
-						<Override
-							slot="Tab"
-							background="#fff"
-							color="#4a8cfa"
-							font="normal 400 14px/22px 'AvenirNextCyrMedium'"
-							margin="0px 2px 0px 0px"
-							focus-box-shadow="none"
-							padding="10px 24px 10px 24px"
-							border-radius="0px"
-							md-width="100%"
-							md-background="#E4E9ED"
-							md-color="#333"
-							md-margin="0px 32px 0px 32px"
-							display="block"
-						/>
-						<Override
-							slot="Tab :active"
-							background="#ffe02d"
-							color="#263238"
-							md-border-radius="0px"
-							md-background="#ffe02d"
-						>
-							All offers
 						</Override>
 						<Override
 							slot="Tablist"
@@ -111,44 +117,38 @@ export default (() => {
 						<Override slot="Tab rnd" display="none">
 							Ростов-на-Дону
 						</Override>
-						<Override slot="Tab 6021ccde9e849bcf1214b34e">
-							Remote work
-						</Override>
-						<Override slot="Tab fl" border-radius="0px 5px 5px 0px" md-border-radius="0px">
-							Remote work
-						</Override>
 						<Components.Tab2 tabId="all">
 							<Stack margin="0px 0px 0px 0px">
-								<StackItem width="100%" display="flex" lg-width="\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" sm-width="100%">
+								<StackItem sm-width="100%" width="100%" display="flex" lg-width="\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\">
 									<Override
 										slot="StackItemContent"
-										align-items="flex-start"
 										justify-content="flex-start"
 										flex-direction="column"
 										lg-align-items="center"
 										md-padding="30px 0px 0px 0px"
+										align-items="flex-start"
 									/>
 									{"        "}
 									<Components.Tabs
+										justify-content="space-between"
+										height="auto"
 										defaultTab="one"
 										orientation="Vertical"
 										width="100%"
 										flex-direction="row-reverse"
-										justify-content="space-between"
-										height="auto"
 									>
 										<Components.TabList md-display="none" width="20%" lg-width="30%">
 											<Components.TabItem tabId="one">
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
-													background="rgba(0, 119, 204, 0)"
 													color="inherit"
 													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													letter-spacing=".2px"
-													display="flex"
 													align-items="center"
 													padding="8px 24px 8px 12px"
+													background="rgba(0, 119, 204, 0)"
+													display="flex"
 													focus-box-shadow="none"
 													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 												>
@@ -166,47 +166,47 @@ export default (() => {
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
+													padding="8px 24px 8px 12px"
+													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													background="rgba(0, 119, 204, 0)"
 													color="inherit"
 													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
-													letter-spacing=".2px"
 													display="flex"
+													letter-spacing=".2px"
 													align-items="center"
-													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
-													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 												>
 													<Icon
+														color="inherit"
+														margin="0px 8px 0px 0px"
 														category="fa"
 														icon={FaFileCode}
 														size="20px"
-														color="inherit"
-														margin="0px 8px 0px 0px"
 													/>
 													РАЗРАБОТКА (6)
 												</Button>
 											</Components.TabItem>
 											<Components.TabItem tabId="three" display="none">
-												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
+												<Override slot="Selected Tab" color="#3d72cc" />
 												<Button
+													display="flex"
+													padding="8px 24px 8px 12px"
+													text-transform="uppercase"
 													background="rgba(0, 119, 204, 0)"
-													color="inherit"
 													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													letter-spacing=".2px"
-													display="flex"
 													align-items="center"
-													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
 													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
-													text-transform="uppercase"
+													color="inherit"
 												>
 													<Icon
+														margin="0px 8px 0px 0px"
 														category="md"
 														icon={MdTouchApp}
 														size="20px"
 														color="inherit"
-														margin="0px 8px 0px 0px"
 													/>
 													Менеджмет (1)
 												</Button>
@@ -215,22 +215,22 @@ export default (() => {
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
+													focus-box-shadow="none"
+													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													background="rgba(0, 119, 204, 0)"
 													color="inherit"
+													padding="8px 24px 8px 12px"
+													align-items="center"
 													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													letter-spacing=".2px"
 													display="flex"
-													align-items="center"
-													padding="8px 24px 8px 12px"
-													focus-box-shadow="none"
-													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 												>
 													<Icon
+														margin="0px 8px 0px 0px"
 														category="io"
 														icon={IoIosChatboxes}
 														size="20px"
 														color="inherit"
-														margin="0px 8px 0px 0px"
 													/>
 													CUSTOMER SUPPORT (1)
 												</Button>
@@ -242,8 +242,8 @@ export default (() => {
 													background="rgba(0, 119, 204, 0)"
 													color="inherit"
 													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
-													letter-spacing=".2px"
 													display="flex"
+													letter-spacing=".2px"
 													align-items="center"
 													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
@@ -262,16 +262,16 @@ export default (() => {
 										</Components.TabList>
 										<Components.TabPanels width="80%" md-width="100%" lg-width="70%">
 											<Components.TabPanel tabId="one" md-width="100%">
-												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
+												<Box padding="0px 0px 15px 0px" margin="0px 0px 0px 0px" width="90%">
 													<Link
+														transition="color 0.2s linear 0s"
+														hover-color="#4a8cfa"
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/technology-evangelistdeveloper-advocate"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
-														transition="color 0.2s linear 0s"
-														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Technology Evangelist/Developer Advocate
 													</Link>
@@ -285,16 +285,16 @@ export default (() => {
 												</Box>
 											</Components.TabPanel>
 											<Components.TabPanel tabId="two" md-width="100%">
-												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
+												<Box padding="0px 0px 15px 0px" margin="0px 0px 0px 0px" width="90%">
 													<Link
-														href="/vacancies/back-end-razrabotchik-php"
-														text-decoration-line="initial"
-														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/back-end-razrabotchik-php"
+														text-decoration-line="initial"
+														color="#263238"
 													>
 														Back-end разработчик (PHP)
 													</Link>
@@ -304,11 +304,10 @@ export default (() => {
 													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
 														Компания uKit Group г. Санкт-Петербург приглашает в свою дружную команду back-end разработчика.
 													</Text>
-													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													<Hr padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" background="rgb(219, 230, 244)" height="1px" />
 												</Box>
-												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
+												<Box margin="0px 0px 0px 0px" width="90%" padding="0px 0px 15px 0px">
 													<Link
-														href="/vacancies/sborka-sajtov-na-konstruktore-sajtov-ukit"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
@@ -316,13 +315,14 @@ export default (() => {
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/sborka-sajtov-na-konstruktore-sajtov-ukit"
 													>
 														Сборка сайтов на конструкторе сайтов uKit
 													</Link>
-													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
+													<Text color="#333" md-font="15px 'AvenirNextCyrMedium'" margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'">
 														Проект Divly | Санкт-Петербург
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif">
 														Компания uKit Group г. Санкт-Петербург приглашает в свою дружную команду начинающих веб-мастеров или студентов сборки сайтов на конструкторе uKit.com
 														<br />
 													</Text>
@@ -330,21 +330,21 @@ export default (() => {
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/sborshik-sajtov-na-konstruktorah-ucozuweb"
-														text-decoration-line="initial"
-														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/sborshik-sajtov-na-konstruktorah-ucozuweb"
+														text-decoration-line="initial"
+														color="#263238"
 													>
 														Сборщик сайтов на конструкторах uCoz/uWeb
 													</Link>
 													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
 														Проект Divly | Санкт-Петербург
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333">
 														Компания uKit Group г. Санкт-Петербург приглашает в свою команду сборщика сайтов на конструкторе uCoz/uWeb
 														<br />
 													</Text>
@@ -352,14 +352,14 @@ export default (() => {
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/junior-nodejs-razrabotchik"
-														text-decoration-line="initial"
-														color="#263238"
-														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/junior-nodejs-razrabotchik"
+														text-decoration-line="initial"
+														color="#263238"
+														font="22px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Junior node.js разработчик
 													</Link>
@@ -374,7 +374,6 @@ export default (() => {
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/senior-nodejs-engineer"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
@@ -382,6 +381,7 @@ export default (() => {
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/senior-nodejs-engineer"
 													>
 														Senior Node.js engineer
 													</Link>
@@ -391,56 +391,57 @@ export default (() => {
 													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
 														В команду проекта uKit разыскивается разработчик, имеющий не менее первого дана по Javascript.
 													</Text>
-													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													<Hr margin="30px 0px 16px 0px" background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" />
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
+														transition="color 0.2s linear 0s"
+														hover-color="#4a8cfa"
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/programmist-perl"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
-														transition="color 0.2s linear 0s"
-														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Программист Perl
 													</Link>
 													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
 														Проект uCoz | Ростов-на-Дону
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif">
 														Вы не знакомы с Perl, но не боитесь попробовать? Это верный выбор и не смотря на то, что данный язык на сегодня не является мейнстримом, как специалист вы только выиграете: перловики на сегодня весьма востребованы именно по причине своей редкости.
 														<br />
 													</Text>
-													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													<Hr padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" background="rgb(219, 230, 244)" height="1px" />
 												</Box>
 											</Components.TabPanel>
 											<Components.TabPanel tabId="three" md-width="100%">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
+														hover-color="#4a8cfa"
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/menedzher-dizajner-shablonov"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
-														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Менеджер-дизайнер шаблонов
 													</Link>
 													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
 														Проект uKit | Ростов-на-Дону
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px">
 														Компания uKit Group приглашает в свою команду менеджера-дизайнера для создания шаблонов для конструктора сайтов uKit. Эта работа для вас если вы знакомы с процессом создания шаблонов для сайтов, имеете опыт работы в студии веб-дизайна.
 													</Text>
 												</Box>
 											</Components.TabPanel>
 											<Components.TabPanel tabId="four" md-width="100%">
-												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
+												<Box padding="0px 0px 15px 0px" margin="0px 0px 0px 0px" width="90%">
 													<Link
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/technology-evangelistdeveloper-advocate"
 														text-decoration-line="initial"
 														color="#263238"
@@ -448,7 +449,6 @@ export default (() => {
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Technology Evangelist/Developer Advocate
 													</Link>
@@ -464,18 +464,18 @@ export default (() => {
 											<Components.TabPanel tabId="five" md-width="100%">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px" md-width="100%">
 													<Link
-														href="/vacancies/pr-menedzher"
-														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/pr-menedzher"
+														text-decoration-line="initial"
 													>
 														PR-менеджер
 													</Link>
-													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
+													<Text font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'" margin="12px 0px 0px 0px">
 														Проект Quarkly | Москва{" "}
 													</Text>
 													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
@@ -486,14 +486,14 @@ export default (() => {
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/specialist-po-seo-optimizacii-sajtov"
-														text-decoration-line="initial"
-														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/specialist-po-seo-optimizacii-sajtov"
+														text-decoration-line="initial"
+														color="#263238"
 													>
 														Специалист по SEO-оптимизации сайтов
 													</Link>
@@ -508,7 +508,6 @@ export default (() => {
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/pr-menedzher1"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
@@ -516,6 +515,7 @@ export default (() => {
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/pr-menedzher1"
 													>
 														PR-менеджер
 													</Link>
@@ -530,14 +530,14 @@ export default (() => {
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/technology-evangelistdeveloper-advocate"
-														text-decoration-line="initial"
-														color="#263238"
-														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/technology-evangelistdeveloper-advocate"
+														text-decoration-line="initial"
+														color="#263238"
+														font="22px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Technology Evangelist/Developer Advocate
 													</Link>
@@ -569,27 +569,27 @@ export default (() => {
 									/>
 									{"        "}
 									<Components.Tabs
+										height="auto"
 										defaultTab="one"
 										orientation="Vertical"
 										width="100%"
 										flex-direction="row-reverse"
 										justify-content="space-between"
-										height="auto"
 									>
-										<Components.TabList md-display="none" width="20%">
+										<Components.TabList width="20%" md-display="none">
 											<Components.TabItem tabId="one">
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
+													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													background="rgba(0, 119, 204, 0)"
 													color="inherit"
-													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
-													letter-spacing=".2px"
 													display="flex"
 													align-items="center"
-													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
-													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
+													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
+													letter-spacing=".2px"
+													padding="8px 24px 8px 12px"
 												>
 													<Icon
 														category="fa"
@@ -605,15 +605,15 @@ export default (() => {
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
-													background="rgba(0, 119, 204, 0)"
-													color="inherit"
 													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													letter-spacing=".2px"
+													focus-box-shadow="none"
+													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
+													background="rgba(0, 119, 204, 0)"
+													color="inherit"
 													display="flex"
 													align-items="center"
 													padding="8px 24px 8px 12px"
-													focus-box-shadow="none"
-													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 												>
 													<Icon
 														category="bs"
@@ -630,14 +630,14 @@ export default (() => {
 											<Components.TabPanel tabId="one" md-width="100%">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px" md-width="100%">
 													<Link
+														hover-color="#4a8cfa"
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/pr-menedzher"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
-														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														PR-менеджер
 													</Link>
@@ -653,6 +653,7 @@ export default (() => {
 											<Components.TabPanel tabId="five" md-width="100%">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px" md-width="100%">
 													<Link
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/pr-menedzher"
 														text-decoration-line="initial"
 														color="#263238"
@@ -660,7 +661,6 @@ export default (() => {
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														PR-менеджер
 													</Link>
@@ -685,11 +685,11 @@ export default (() => {
 								<StackItem width="100%" display="flex" lg-width="\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" sm-width="100%">
 									<Override
 										slot="StackItemContent"
-										align-items="flex-start"
-										justify-content="flex-start"
 										flex-direction="column"
 										lg-align-items="center"
 										md-padding="30px 0px 0px 0px"
+										align-items="flex-start"
+										justify-content="flex-start"
 									/>
 									{"        "}
 									<Components.Tabs
@@ -705,22 +705,22 @@ export default (() => {
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
-													background="rgba(0, 119, 204, 0)"
 													color="inherit"
 													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
-													letter-spacing=".2px"
-													display="flex"
-													align-items="center"
 													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
+													background="rgba(0, 119, 204, 0)"
+													display="flex"
+													align-items="center"
 													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
+													letter-spacing=".2px"
 												>
 													<Icon
-														category="fa"
 														icon={FaBoxes}
 														color="#inherit"
 														margin="0px 8px 0px 0px"
 														size="20px"
+														category="fa"
 													/>
 													ВСЕ ВАКАНСИИ (4)
 												</Button>
@@ -729,22 +729,22 @@ export default (() => {
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
-													background="rgba(0, 119, 204, 0)"
-													color="inherit"
-													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													letter-spacing=".2px"
-													display="flex"
 													align-items="center"
+													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
+													display="flex"
 													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
 													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
+													background="rgba(0, 119, 204, 0)"
+													color="inherit"
 												>
 													<Icon
+														color="inherit"
+														margin="0px 8px 0px 0px"
 														category="fa"
 														icon={FaFileCode}
 														size="20px"
-														color="inherit"
-														margin="0px 8px 0px 0px"
 													/>
 													РАЗРАБОТКА (3)
 												</Button>
@@ -753,22 +753,22 @@ export default (() => {
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
-													background="rgba(0, 119, 204, 0)"
-													color="inherit"
-													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
-													letter-spacing=".2px"
 													display="flex"
 													align-items="center"
-													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
+													background="rgba(0, 119, 204, 0)"
+													letter-spacing=".2px"
+													padding="8px 24px 8px 12px"
 													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
+													color="inherit"
+													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 												>
 													<Icon
+														margin="0px 8px 0px 0px"
 														category="bs"
 														icon={BsPieChartFill}
 														size="18px"
 														color="inherit"
-														margin="0px 8px 0px 0px"
 													/>
 													{" "}МАРКЕТИНГ, РЕКЛАМА, PR (1)
 												</Button>
@@ -778,14 +778,14 @@ export default (() => {
 											<Components.TabPanel tabId="one" md-width="100%">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
+														hover-color="#4a8cfa"
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/back-end-razrabotchik-php"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
-														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Back-end разработчик (PHP)
 													</Link>
@@ -799,7 +799,6 @@ export default (() => {
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/specialist-po-seo-optimizacii-sajtov"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
@@ -807,6 +806,7 @@ export default (() => {
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/specialist-po-seo-optimizacii-sajtov"
 													>
 														Специалист по SEO-оптимизации сайтов
 													</Link>
@@ -817,7 +817,7 @@ export default (() => {
 														Компания uKit Group приглашает в свою команду специалиста по SEO-оптимизации сайтов.
 														<br />
 													</Text>
-													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													<Hr padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" background="rgb(219, 230, 244)" height="1px" />
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
@@ -835,22 +835,22 @@ export default (() => {
 													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
 														Проект Divly | Санкт-Петербург
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif">
 														Компания uKit Group г. Санкт-Петербург приглашает в свою дружную команду начинающих веб-мастеров или студентов сборки сайтов на конструкторе uKit.com
 														<br />
 													</Text>
-													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													<Hr padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" background="rgb(219, 230, 244)" height="1px" />
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/sborshik-sajtov-na-konstruktorah-ucozuweb"
-														text-decoration-line="initial"
-														color="#263238"
-														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/sborshik-sajtov-na-konstruktorah-ucozuweb"
+														text-decoration-line="initial"
+														color="#263238"
+														font="22px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Сборщик сайтов на конструкторах uCoz/uWeb
 													</Link>
@@ -861,13 +861,12 @@ export default (() => {
 														Компания uKit Group г. Санкт-Петербург приглашает в свою команду сборщика сайтов на конструкторе uCoz/uWeb
 														<br />
 													</Text>
-													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													<Hr margin="30px 0px 16px 0px" background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" />
 												</Box>
 											</Components.TabPanel>
-											<Components.TabPanel tabId="two" md-width="100%">
+											<Components.TabPanel md-width="100%" tabId="two">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/back-end-razrabotchik-php"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
@@ -875,6 +874,7 @@ export default (() => {
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/back-end-razrabotchik-php"
 													>
 														Back-end разработчик (PHP)
 													</Link>
@@ -888,6 +888,7 @@ export default (() => {
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/sborka-sajtov-na-konstruktore-sajtov-ukit"
 														text-decoration-line="initial"
 														color="#263238"
@@ -895,7 +896,6 @@ export default (() => {
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Сборка сайтов на конструкторе сайтов uKit
 													</Link>
@@ -908,9 +908,8 @@ export default (() => {
 													</Text>
 													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
 												</Box>
-												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
+												<Box padding="0px 0px 15px 0px" margin="0px 0px 0px 0px" width="90%">
 													<Link
-														href="/vacancies/sborshik-sajtov-na-konstruktorah-ucozuweb"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
@@ -918,6 +917,7 @@ export default (() => {
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/sborshik-sajtov-na-konstruktorah-ucozuweb"
 													>
 														Сборщик сайтов на конструкторах uCoz/uWeb
 													</Link>
@@ -934,21 +934,21 @@ export default (() => {
 											<Components.TabPanel tabId="five" md-width="100%">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/specialist-po-seo-optimizacii-sajtov"
-														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/specialist-po-seo-optimizacii-sajtov"
+														text-decoration-line="initial"
 													>
 														Специалист по SEO-оптимизации сайтов
 													</Link>
-													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
+													<Text color="#333" md-font="15px 'AvenirNextCyrMedium'" margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'">
 														Проект Divly | Санкт-Петербург
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif">
 														Компания uKit Group приглашает в свою команду специалиста по SEO-оптимизации сайтов.
 														<br />
 													</Text>
@@ -963,14 +963,14 @@ export default (() => {
 						</Components.Tab2>
 						<Components.Tab2 tabId="rnd">
 							<Stack margin="0px 0px 0px 0px">
-								<StackItem width="100%" display="flex" lg-width="\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\" sm-width="100%">
+								<StackItem sm-width="100%" width="100%" display="flex" lg-width="\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\">
 									<Override
 										slot="StackItemContent"
-										align-items="flex-start"
 										justify-content="flex-start"
 										flex-direction="column"
 										lg-align-items="center"
 										md-padding="30px 0px 0px 0px"
+										align-items="flex-start"
 									/>
 									{"        "}
 									<Components.Tabs
@@ -986,22 +986,22 @@ export default (() => {
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
-													background="rgba(0, 119, 204, 0)"
 													color="inherit"
-													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													letter-spacing=".2px"
 													display="flex"
-													align-items="center"
-													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
 													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
+													background="rgba(0, 119, 204, 0)"
+													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
+													align-items="center"
+													padding="8px 24px 8px 12px"
 												>
 													<Icon
+														size="20px"
 														category="fa"
 														icon={FaBoxes}
 														color="#inherit"
 														margin="0px 8px 0px 0px"
-														size="20px"
 													/>
 													ВСЕ ВАКАНСИИ (5)
 												</Button>
@@ -1010,22 +1010,22 @@ export default (() => {
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
+													padding="8px 24px 8px 12px"
+													focus-box-shadow="none"
 													background="rgba(0, 119, 204, 0)"
 													color="inherit"
 													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													letter-spacing=".2px"
-													display="flex"
 													align-items="center"
-													padding="8px 24px 8px 12px"
-													focus-box-shadow="none"
+													display="flex"
 													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 												>
 													<Icon
+														margin="0px 8px 0px 0px"
 														category="fa"
 														icon={FaFileCode}
 														size="20px"
 														color="inherit"
-														margin="0px 8px 0px 0px"
 													/>
 													РАЗРАБОТКА (3)
 												</Button>
@@ -1034,16 +1034,16 @@ export default (() => {
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
-													background="rgba(0, 119, 204, 0)"
 													color="inherit"
-													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													letter-spacing=".2px"
 													display="flex"
+													text-transform="uppercase"
+													background="rgba(0, 119, 204, 0)"
 													align-items="center"
 													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
 													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
-													text-transform="uppercase"
+													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 												>
 													<Icon
 														category="md"
@@ -1059,15 +1059,15 @@ export default (() => {
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
-													background="rgba(0, 119, 204, 0)"
-													color="inherit"
-													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													letter-spacing=".2px"
+													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
+													color="inherit"
 													display="flex"
 													align-items="center"
 													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
 													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
+													background="rgba(0, 119, 204, 0)"
 												>
 													<Icon
 														category="io"
@@ -1084,28 +1084,29 @@ export default (() => {
 											<Components.TabPanel tabId="one" md-width="100%">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/junior-nodejs-razrabotchik"
-														text-decoration-line="initial"
-														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/junior-nodejs-razrabotchik"
+														text-decoration-line="initial"
+														color="#263238"
 													>
 														Junior node.js разработчик
 													</Link>
-													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
+													<Text font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'" margin="12px 0px 0px 0px">
 														Проект uKit | Ростов-на-Дону
 													</Text>
 													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
 														Приглашаем на работу Junior node.js разработчика.
 														<br />
 													</Text>
-													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													<Hr padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" background="rgb(219, 230, 244)" height="1px" />
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/menedzher-dizajner-shablonov"
 														text-decoration-line="initial"
 														color="#263238"
@@ -1113,19 +1114,18 @@ export default (() => {
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Менеджер-дизайнер шаблонов
 													</Link>
-													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
+													<Text md-font="15px 'AvenirNextCyrMedium'" margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333">
 														Проект uKit | Ростов-на-Дону
 													</Text>
 													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
 														Компания uKit Group приглашает в свою команду менеджера-дизайнера для создания шаблонов для конструктора сайтов uKit. Эта работа для вас если вы знакомы с процессом создания шаблонов для сайтов, имеете опыт работы в студии веб-дизайна.
 													</Text>
-													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													<Hr margin="30px 0px 16px 0px" background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" />
 												</Box>
-												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
+												<Box margin="0px 0px 0px 0px" width="90%" padding="0px 0px 15px 0px">
 													<Link
 														href="/vacancies/specialist-sluzhby-tehnicheskoj-podderzhki"
 														text-decoration-line="initial"
@@ -1138,7 +1138,7 @@ export default (() => {
 													>
 														Специалист службы технической поддержки
 													</Link>
-													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
+													<Text font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'" margin="12px 0px 0px 0px">
 														Проект uCalc | Ростов-на-Дону
 													</Text>
 													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
@@ -1149,39 +1149,39 @@ export default (() => {
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
+														hover-color="#4a8cfa"
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/senior-nodejs-engineer"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
-														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Senior Node.js engineer
 													</Link>
 													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
 														Проект uKit | Ростов-на-Дону
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px">
 														В команду проекта uKit разыскивается разработчик, имеющий не менее первого дана по Javascript.
 													</Text>
 													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/programmist-perl"
-														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/programmist-perl"
+														text-decoration-line="initial"
 													>
 														Программист Perl
 													</Link>
-													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
+													<Text font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'" margin="12px 0px 0px 0px">
 														Проект uCoz | Ростов-на-Дону
 													</Text>
 													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
@@ -1194,21 +1194,21 @@ export default (() => {
 											<Components.TabPanel tabId="two" md-width="100%">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
+														hover-color="#4a8cfa"
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/junior-nodejs-razrabotchik"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
-														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Junior node.js разработчик
 													</Link>
 													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
 														Проект uKit | Ростов-на-Дону
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px">
 														Приглашаем на работу Junior node.js разработчика.
 														<br />
 													</Text>
@@ -1230,14 +1230,13 @@ export default (() => {
 													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
 														Проект uKit | Ростов-на-Дону
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px">
 														В команду проекта uKit разыскивается разработчик, имеющий не менее первого дана по Javascript.
 													</Text>
 													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/programmist-perl"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
@@ -1245,23 +1244,23 @@ export default (() => {
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/programmist-perl"
 													>
 														Программист Perl
 													</Link>
-													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
+													<Text font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'" margin="12px 0px 0px 0px">
 														Проект uCoz | Ростов-на-Дону
 													</Text>
 													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
 														Вы не знакомы с Perl, но не боитесь попробовать? Это верный выбор и не смотря на то, что данный язык на сегодня не является мейнстримом, как специалист вы только выиграете: перловики на сегодня весьма востребованы именно по причине своей редкости.
 														<br />
 													</Text>
-													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													<Hr margin="30px 0px 16px 0px" background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" />
 												</Box>
 											</Components.TabPanel>
 											<Components.TabPanel tabId="three" md-width="100%">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/menedzher-dizajner-shablonov"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
@@ -1269,13 +1268,14 @@ export default (() => {
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/menedzher-dizajner-shablonov"
 													>
 														Менеджер-дизайнер шаблонов
 													</Link>
-													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
+													<Text font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'" margin="12px 0px 0px 0px">
 														Проект uKit | Ростов-на-Дону
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px">
 														Компания uKit Group приглашает в свою команду менеджера-дизайнера для создания шаблонов для конструктора сайтов uKit. Эта работа для вас если вы знакомы с процессом создания шаблонов для сайтов, имеете опыт работы в студии веб-дизайна.
 													</Text>
 												</Box>
@@ -1283,21 +1283,21 @@ export default (() => {
 											<Components.TabPanel tabId="four" md-width="100%">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
+														hover-color="#4a8cfa"
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/specialist-sluzhby-tehnicheskoj-podderzhki"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
-														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Специалист службы технической поддержки
 													</Link>
 													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
 														Проект uCalc | Ростов-на-Дону
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif">
 														Компания uKit Group г. Санкт-Петербург приглашает в свою команду сборщика сайтов на конструкторе uCoz/uWeb
 														<br />
 													</Text>
@@ -1335,13 +1335,13 @@ export default (() => {
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
-													background="rgba(0, 119, 204, 0)"
+													padding="8px 24px 8px 12px"
 													color="inherit"
 													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													letter-spacing=".2px"
 													display="flex"
 													align-items="center"
-													padding="8px 24px 8px 12px"
+													background="rgba(0, 119, 204, 0)"
 													focus-box-shadow="none"
 													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 												>
@@ -1363,8 +1363,8 @@ export default (() => {
 													color="inherit"
 													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													letter-spacing=".2px"
-													display="flex"
 													align-items="center"
+													display="flex"
 													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
 													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
@@ -1383,23 +1383,23 @@ export default (() => {
 												<Override slot="Selected Tab" color="#3d72cc" />
 												<Override slot="Tab" color="#afc1db" />
 												<Button
+													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													background="rgba(0, 119, 204, 0)"
 													color="inherit"
 													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
-													letter-spacing=".2px"
-													display="flex"
 													align-items="center"
 													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
-													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
+													letter-spacing=".2px"
+													display="flex"
 													text-transform="uppercase"
 												>
 													<Icon
+														color="inherit"
+														margin="0px 8px 0px 0px"
 														category="md"
 														icon={MdTouchApp}
 														size="20px"
-														color="inherit"
-														margin="0px 8px 0px 0px"
 													/>
 													Менеджмет (1)
 												</Button>
@@ -1409,38 +1409,38 @@ export default (() => {
 												<Override slot="Tab" color="#afc1db" />
 												<Button
 													background="rgba(0, 119, 204, 0)"
-													color="inherit"
 													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													letter-spacing=".2px"
 													display="flex"
+													color="inherit"
 													align-items="center"
 													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
 													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 												>
 													<Icon
+														margin="0px 8px 0px 0px"
 														category="io"
 														icon={IoIosChatboxes}
 														size="20px"
 														color="inherit"
-														margin="0px 8px 0px 0px"
 													/>
 													CUSTOMER SUPPORT (1)
 												</Button>
 											</Components.TabItem>
-											<Components.TabItem tabId="five" display="none">
-												<Override slot="Selected Tab" color="#3d72cc" />
+											<Components.TabItem display="none" tabId="five">
 												<Override slot="Tab" color="#afc1db" />
+												<Override slot="Selected Tab" color="#3d72cc" />
 												<Button
-													background="rgba(0, 119, 204, 0)"
-													color="inherit"
 													font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
 													letter-spacing=".2px"
 													display="flex"
-													align-items="center"
-													padding="8px 24px 8px 12px"
 													focus-box-shadow="none"
 													lg-font="normal 500 12px/24px 'AvenirNextCyrDemi', sans-serif"
+													background="rgba(0, 119, 204, 0)"
+													color="inherit"
+													align-items="center"
+													padding="8px 24px 8px 12px"
 												>
 													<Icon
 														category="bs"
@@ -1457,21 +1457,21 @@ export default (() => {
 											<Components.TabPanel tabId="one" md-width="100%">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
+														transition="color 0.2s linear 0s"
+														hover-color="#4a8cfa"
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/technology-evangelistdeveloper-advocate"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
-														transition="color 0.2s linear 0s"
-														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Technology Evangelist/Developer Advocate
 													</Link>
 													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
 														Support Project
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif">
 														We are looking for an energetic, diligent and attentive professional to join our technical support team.
 														<br />
 													</Text>
@@ -1480,28 +1480,27 @@ export default (() => {
 											<Components.TabPanel tabId="two" md-width="100%">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/back-end-razrabotchik-php"
-														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/back-end-razrabotchik-php"
+														text-decoration-line="initial"
 													>
 														Back-end разработчик (PHP)
 													</Link>
 													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
 														Проект Divly, uSocial | Санкт-Петербург
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px">
 														Компания uKit Group г. Санкт-Петербург приглашает в свою дружную команду back-end разработчика.
 													</Text>
-													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													<Hr padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" background="rgb(219, 230, 244)" height="1px" />
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/sborka-sajtov-na-konstruktore-sajtov-ukit"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
@@ -1509,10 +1508,11 @@ export default (() => {
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/sborka-sajtov-na-konstruktore-sajtov-ukit"
 													>
 														Сборка сайтов на конструкторе сайтов uKit
 													</Link>
-													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
+													<Text md-font="15px 'AvenirNextCyrMedium'" margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333">
 														Проект Divly | Санкт-Петербург
 													</Text>
 													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
@@ -1543,8 +1543,9 @@ export default (() => {
 													</Text>
 													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
 												</Box>
-												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
+												<Box margin="0px 0px 0px 0px" width="90%" padding="0px 0px 15px 0px">
 													<Link
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/junior-nodejs-razrabotchik"
 														text-decoration-line="initial"
 														color="#263238"
@@ -1552,14 +1553,13 @@ export default (() => {
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Junior node.js разработчик
 													</Link>
 													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
 														Проект uKit | Ростов-на-Дону
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px">
 														Приглашаем на работу Junior node.js разработчика.
 														<br />
 													</Text>
@@ -1567,14 +1567,14 @@ export default (() => {
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/senior-nodejs-engineer"
-														text-decoration-line="initial"
-														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/senior-nodejs-engineer"
+														text-decoration-line="initial"
+														color="#263238"
 													>
 														Senior Node.js engineer
 													</Link>
@@ -1606,20 +1606,20 @@ export default (() => {
 														Вы не знакомы с Perl, но не боитесь попробовать? Это верный выбор и не смотря на то, что данный язык на сегодня не является мейнстримом, как специалист вы только выиграете: перловики на сегодня весьма востребованы именно по причине своей редкости.
 														<br />
 													</Text>
-													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													<Hr margin="30px 0px 16px 0px" background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" />
 												</Box>
 											</Components.TabPanel>
-											<Components.TabPanel tabId="three" md-width="100%">
+											<Components.TabPanel md-width="100%" tabId="three">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
+														hover-color="#4a8cfa"
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/menedzher-dizajner-shablonov"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
-														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Менеджер-дизайнер шаблонов
 													</Link>
@@ -1654,31 +1654,32 @@ export default (() => {
 													</Text>
 												</Box>
 											</Components.TabPanel>
-											<Components.TabPanel tabId="five" md-width="100%">
+											<Components.TabPanel md-width="100%" tabId="five">
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px" md-width="100%">
 													<Link
+														hover-color="#4a8cfa"
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/pr-menedzher"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
-														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														PR-менеджер
 													</Link>
-													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
+													<Text md-font="15px 'AvenirNextCyrMedium'" margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333">
 														Проект Quarkly | Москва{" "}
 													</Text>
 													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
 														Мы ищем талантливого PR-щика, серьезно увлеченного вебом. Для продвижения на рынке (в первую очередь англоязычном) проекта Quarkly, ориентированного на профессиональных пользователей (веб-дизайнеров, фронтенд-разработчиков, верстальщиков).
 														<br />
 													</Text>
-													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													<Hr margin="30px 0px 16px 0px" background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" />
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
+														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 														href="/vacancies/specialist-po-seo-optimizacii-sajtov"
 														text-decoration-line="initial"
 														color="#263238"
@@ -1686,14 +1687,13 @@ export default (() => {
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
-														md-font="20px 'AvenirNextCyrMedium', sans-serif"
 													>
 														Специалист по SEO-оптимизации сайтов
 													</Link>
-													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
+													<Text font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'" margin="12px 0px 0px 0px">
 														Проект Divly | Санкт-Петербург
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333">
 														Компания uKit Group приглашает в свою команду специалиста по SEO-оптимизации сайтов.
 														<br />
 													</Text>
@@ -1701,14 +1701,14 @@ export default (() => {
 												</Box>
 												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
 													<Link
-														href="/vacancies/pr-menedzher1"
-														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
 														margin="0px 0px 0px 0px"
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/pr-menedzher1"
+														text-decoration-line="initial"
 													>
 														PR-менеджер
 													</Link>
@@ -1719,11 +1719,10 @@ export default (() => {
 														Мы ищем талантливого PR-щика, серьезно увлеченного вебом. Для продвижения на рынке (в первую очередь англоязычном) проекта Quarkly, ориентированного на профессиональных пользователей (веб-дизайнеров, фронтенд-разработчиков, верстальщиков).
 														<br />
 													</Text>
-													<Hr background="rgb(219, 230, 244)" height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" />
+													<Hr height="1px" padding="0px 0px 0px 0px" margin="30px 0px 16px 0px" background="rgb(219, 230, 244)" />
 												</Box>
-												<Box width="90%" padding="0px 0px 15px 0px" margin="0px 0px 0px 0px">
+												<Box padding="0px 0px 15px 0px" margin="0px 0px 0px 0px" width="90%">
 													<Link
-														href="/vacancies/technology-evangelistdeveloper-advocate"
 														text-decoration-line="initial"
 														color="#263238"
 														font="22px 'AvenirNextCyrMedium', sans-serif"
@@ -1731,13 +1730,14 @@ export default (() => {
 														transition="color 0.2s linear 0s"
 														hover-color="#4a8cfa"
 														md-font="20px 'AvenirNextCyrMedium', sans-serif"
+														href="/vacancies/technology-evangelistdeveloper-advocate"
 													>
 														Technology Evangelist/Developer Advocate
 													</Link>
 													<Text margin="12px 0px 0px 0px" font="16px 'AvenirNextCyrMedium'" color="#333" md-font="15px 'AvenirNextCyrMedium'">
 														Проект Quarkly | Удаленная работа
 													</Text>
-													<Text margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333" md-font="14px 'AvenirNextCyrRegular', sans-serif">
+													<Text md-font="14px 'AvenirNextCyrRegular', sans-serif" margin="12px 0px 0px 0px" font="16px/1.4 'AvenirNextCyrRegular', sans-serif" color="#333">
 														Мы ищем человека для продвижения на англоязычном рынке проекта Quarkly, ориентированного на профессиональных пользователей (веб-дизайнеров, фронтенд-разработчиков, верстальщиков).
 													</Text>
 												</Box>
@@ -1755,31 +1755,9 @@ export default (() => {
 			</Stack>
 		</Section>
 		<Components.Footer />
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
 		<RawHtml>
 			<style place={"endOfHead"} rawKey={"602c67f4d524b3b42d4be948"}>
-				{"* {\n  scroll-behavior: smooth;\n  }\n.nobutton {\npointer-events: none; \n}\n  .active .fileText {\n  display: none;\n  }\n  input.fileText {\n      opacity: 1 !important;\n  }\n  * {\n    -webkit-tap-highlight-color: transparent!important;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrRegular';\n    src: url('/fonts/AvenirNextCyr-Regular.eot');\n    src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrMedium';\n    src: url('/fonts/AvenirNextCyr-Medium.eot');\n    src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrBold';\n    src: url('/fonts/AvenirNextCyr-Bold.eot');\n    src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrDemi';\n    src: url('/fonts/AvenirNextCyr-Demi.otf');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  body {\n    font-family: 'AvenirNextCyrRegular', sans-serif;\n    font-weight: normal;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n:focus {\n    outline: none;\n}"}
+				{"@media (min-width: 1200px) {\n* {\n    scroll-behavior: smooth;\n    }\n    }\n.nobutton {\npointer-events: none; \n}\n  .active .fileText {\n  display: none;\n  }\n  input.fileText {\n      opacity: 1 !important;\n  }\n  * {\n    -webkit-tap-highlight-color: transparent!important;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrRegular';\n    src: url('/fonts/AvenirNextCyr-Regular.eot');\n    src: url('/fonts/AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Regular.woff') format('woff'), url('/fonts/AvenirNextCyr-Regular.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrMedium';\n    src: url('/fonts/AvenirNextCyr-Medium.eot');\n    src: url('/fonts/AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Medium.woff') format('woff'), url('/fonts/AvenirNextCyr-Medium.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrBold';\n    src: url('/fonts/AvenirNextCyr-Bold.eot');\n    src: url('/fonts/AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'), url('/fonts/AvenirNextCyr-Bold.woff') format('woff'), url('/fonts/AvenirNextCyr-Bold.ttf') format('truetype');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  @font-face {\n    font-family: 'AvenirNextCyrDemi';\n    src: url('/fonts/AvenirNextCyr-Demi.otf');\n    font-weight: normal;\n    font-style: normal;\n    font-display: auto;\n  }\n  body {\n    font-family: 'AvenirNextCyrRegular', sans-serif;\n    font-weight: normal;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n:focus {\n    outline: none;\n}"}
 			</style>
 		</RawHtml>
 	</Theme>;

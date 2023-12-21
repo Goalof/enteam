@@ -54,7 +54,7 @@ const overrides = {
 	"image": {
 		"kind": "Image",
 		"props": {
-			"src": "https://screenshot.ukit.com/src/goalov/21/2021-01-27-03-36-00.png",
+			"src": "https://uploads.quarkly.io/600e0aca11b69c001f4aa723/images/logofooter.png?v=2021-11-23T15:51:40.636Z",
 			"color": "#ffffff",
 			"width": "121px",
 			"height": "40px",
@@ -80,7 +80,6 @@ const overrides = {
 				target="_blank"
 				lg-padding="0px 0px 0px 0px"
 				lg-margin="0px 0px 0px 0px"
-				data-q-widget-type="PRIMITIVE"
 				overflow-wrap="normal"
 				word-break="normal"
 				white-space="normal"
@@ -111,28 +110,6 @@ const overrides = {
 				lg-margin="0px 0px 0px 0px"
 			>
 				Вакансии в России
-			</Link>
-		}
-	},
-	"text2": {
-		"kind": "Text",
-		"props": {
-			"font": "normal 300 14px/19px 'AvenirNextCyrMedium', sans-serif",
-			"margin": "3px 0px 0px 22px",
-			"display": "inline-block",
-			"color": "#9BABBF",
-			"lg-margin": "10px 0px 0px 0px",
-			"children": <Link
-				href="http://ua.uteam.pro/"
-				color="#4a8cfa"
-				text-decoration-line="initial"
-				hover-color="#3d72cc"
-				transition="color 0.2s ease 0s"
-				font="300 14px/19px 'AvenirNextCyrMedium'"
-				lg-padding="0px 0px 0px 0px"
-				lg-margin="0px 0px 0px 0px"
-			>
-				Вакансії в Україні{" "}
 			</Link>
 		}
 	},
