@@ -1495,7 +1495,7 @@ export default (() => {
 						<br />
 						in 4 cities
 						<br />
-						of Russia and Ukraine
+						of Russia and Azerbaijan
 					</Text>
 					{"    "}
 				</StackItem>
